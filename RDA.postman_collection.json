@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "175202ad-58ca-4bbd-aed0-4ed90922a9a1",
+		"name": "RDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdateAdcEnable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"ToolInfoList\":\r\n\r\n    [\r\n\r\n        {\r\n\r\n            \"ToolId\": \"TEST_ADC\",\r\n\r\n            \"KlarfVersion\": \"Klarf11\",\r\n\r\n            \"SubstrateType\": \"Wafer\",\r\n\r\n            \"ADCEnabled\": true,\r\n\r\n            \"DestinationPathList\": []\r\n\r\n        }\r\n\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.20.125.140:80/PROD/RDAUpStreamProcessor/UpdateAdcEnable",
+					"protocol": "http",
+					"host": [
+						"10",
+						"20",
+						"125",
+						"140"
+					],
+					"port": "80",
+					"path": [
+						"PROD",
+						"RDAUpStreamProcessor",
+						"UpdateAdcEnable"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

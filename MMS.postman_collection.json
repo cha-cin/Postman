@@ -1,0 +1,2797 @@
+{
+	"info": {
+		"_postman_id": "dead7ee0-8c47-4f4c-835e-69a713a2b593",
+		"name": "MMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken_Prod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MFkwa0hqSFNKWWFFX0RTOXd0cjBJUzV5SEVrYTpVSGVmYzhhNmZYTzlSdjVjeTZOOUdaam5uc2th",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://webapigateway.micron.com/token",
+					"protocol": "http",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken_Prod_New_CTSUI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic X3p0UHIwU0wwcHFSbGIyQjFKcTlRUjVfam44YTpxdkRTeHB1VjJNckhxdFB0MUU3T0pEOWtydWth",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://webapigateway.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken_Prod_LotLocationTracking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZmltS001aF9mVnFvR0cxUWRDXzhHWm5Kdk9RYTpNM3Ntb3RPS19hcTZOOTVSRUhBeFh5NzRzT01h",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://webapigateway.micron.com/token",
+					"protocol": "http",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken_Prod_taapi3prodgtwy.tatw.micron.com",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MFkwa0hqSFNKWWFFX0RTOXd0cjBJUzV5SEVrYTpVSGVmYzhhNmZYTzlSdjVjeTZOOUdaam5uc2th",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://taapi3prodgtwy.tatw.micron.com/token",
+					"protocol": "http",
+					"host": [
+						"taapi3prodgtwy",
+						"tatw",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken_Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bnhPa2tXX21SZHNja0NuaXZWTWlVRmg3SllzYTpSN2FkVTZZcXBnTmRSNEpKejNUTm5Qd2Z5Q3dh"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://testapigtwy.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"testapigtwy",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken_Test _pilotapigateway.micron.com",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bnhPa2tXX21SZHNja0NuaXZWTWlVRmg3SllzYTpSN2FkVTZZcXBnTmRSNEpKejNUTm5Qd2Z5Q3dh"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://pilotapigateway.micron.com/token",
+					"protocol": "http",
+					"host": [
+						"pilotapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_GoldWire",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 6205767c-411a-333e-8996-54ba2973bfa3",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n    \t\"micronPN\": \"340-00054\",\n    \t\"MaterialType\":\"GOLD_WIRE\"\n\t},\n\t{\n\t\t\"micronPN\":\"340-00036\",\n    \t\"MaterialType\":\"GOLD_WIRE\"\n\t},\n\t{\n\t\t\"micronPN\":\"340-00047\",\n    \t\"MaterialType\":\"GOLD_WIRE\"\n\t}\n]"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckStockAvailable",
+					"host": [
+						"{{MMSURL}}CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "TransferMaterial_GoldWire",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lotNo\": \"KKTEST\",\n    \"Username\":\"LEEKEATKEAN\",\n    \"TransferMode\":\"OUT\",\n    \"SystemID\":\"LMMS\",\n    \"TargetSystemID\":\"MMS\",\n    \"MaterialType\": \"CAPILLARY\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TransferMaterial",
+					"host": [
+						"{{MMSURL}}TransferMaterial"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_SolderBall",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 72d6c47e-ac6b-3a11-a00c-0f07b09ed353"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"micronPN\": \"123-45678\",\n        \"MaterialType\": \"SOLDER_BALL\"\n    },\n    {\n        \"micronPN\": \"123-23456\",\n        \"MaterialType\": \"SOLDER_BALL\"\n    },\n    {\n        \"micronPN\": \"234-654327\",\n        \"MaterialType\": \"SOLDER_BALL\"\n    }\n]"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckStockAvailable",
+					"host": [
+						"{{MMSURL}}CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_Substrate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 72d6c47e-ac6b-3a11-a00c-0f07b09ed353"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"micronPN\": \"123-45678\",\n        \"MaterialType\": \"SUBSTRATE\"\n    },\n    {\n        \"micronPN\": \"123-23456\",\n        \"MaterialType\": \"SUBSTRATE\"\n    },\n    {\n        \"micronPN\": \"234-654327\",\n        \"MaterialType\": \"SUBSTRATE\"\n    }\n]"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckStockAvailable",
+					"host": [
+						"{{MMSURL}}CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_DafTape",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"micronPN\": \"320-00716\",\n        \"MaterialType\": \"DAF_TAPE\"\n    }\n]"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckStockAvailable",
+					"host": [
+						"{{MMSURL}}CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_Capillary",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 59d5b3db-9ef7-34bd-8863-f54e3e0e5394",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n    \t\"micronPN\": \"300-01122\",\n    \t\"MaterialType\":\"CAPILLARY\"\n\t}\n]"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckStockAvailable",
+					"host": [
+						"{{MMSURL}}CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStockAvailable_Capillary_Direct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n    \t\"micronPN\": \"300-01122\",\n    \t\"MaterialType\":\"CAPILLARY\"\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://siwwebdevl01.sing.micron.com/MMSILWebservice/devl/singapore/CheckStockAvailable",
+					"protocol": "http",
+					"host": [
+						"siwwebdevl01",
+						"sing",
+						"micron",
+						"com"
+					],
+					"path": [
+						"MMSILWebservice",
+						"devl",
+						"singapore",
+						"CheckStockAvailable"
+					]
+				},
+				"description": "Vendor UI needs SAP data for stock room material availability.<br/>\r\nInput: Micron Part Number<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "TriggerMatReqOrder_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n    \"micronPN\": \"340-00054\",\r\n    \"unitOfMeasures\": \"m\",\r\n    \"quantity\": 30000,\r\n    \"MaterialType\": \"GOLD_WIRE\"\r\n\t}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TriggerMatReqOrder",
+					"host": [
+						"{{MMSURL}}TriggerMatReqOrder"
+					]
+				},
+				"description": "Vendor UI would need to give the report in API to Micron middle tier to trigger for Matreq SAP no. (for stock room order) <br/>\r\nInput: Micron Part Number, Quantity, Unit Of Measures<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "TriggerMatReqOrder_Solder_Ball",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\r\n    \"micronPN\": \"320-00401\",\r\n    \"unitOfMeasures\": \"BOT\",\r\n    \"quantity\": 100,\r\n    \"MaterialType\": \"SOLDER_BALL\"\r\n\t}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TriggerMatReqOrder",
+					"host": [
+						"{{MMSURL}}TriggerMatReqOrder"
+					]
+				},
+				"description": "Vendor UI would need to give the report in API to Micron middle tier to trigger for Matreq SAP no. (for stock room order) <br/>\r\nInput: Micron Part Number, Quantity, Unit Of Measures<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "TriggerMatReqOrder_DafTape",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n    \"micronPN\": \"320-00716\",\r\n    \"unitOfMeasures\": \"EA\",\r\n    \"quantity\": 1000,\r\n    \"MaterialType\": \"DAF_TAPE\"\r\n\t}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TriggerMatReqOrder",
+					"host": [
+						"{{MMSURL}}TriggerMatReqOrder"
+					]
+				},
+				"description": "Vendor UI would need to give the report in API to Micron middle tier to trigger for Matreq SAP no. (for stock room order) <br/>\r\nInput: Micron Part Number, Quantity, Unit Of Measures<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "TriggerMatReqOrder_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\r\n    \"micronPN\": \"300-01122\",\r\n    \"unitOfMeasures\": \"EA\",\r\n    \"quantity\": 10,\r\n    \"MaterialType\": \"CAPILLARY\"\r\n\t}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TriggerMatReqOrder",
+					"host": [
+						"{{MMSURL}}TriggerMatReqOrder"
+					]
+				},
+				"description": "Vendor UI would need to give the report in API to Micron middle tier to trigger for Matreq SAP no. (for stock room order) <br/>\r\nInput: Micron Part Number, Quantity, Unit Of Measures<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "TriggerMatReqOrder_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\r\n    \"micronPN\": \"300-01122\",\r\n    \"unitOfMeasures\": \"EA\",\r\n    \"quantity\": 10,\r\n    \"MaterialType\": \"SUBSTRATE\"\r\n\t}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}TriggerMatReqOrder",
+					"host": [
+						"{{MMSURL}}TriggerMatReqOrder"
+					]
+				},
+				"description": "Vendor UI would need to give the report in API to Micron middle tier to trigger for Matreq SAP no. (for stock room order) <br/>\r\nInput: Micron Part Number, Quantity, Unit Of Measures<br/>\r\nOutput: Micron Part Number, Quantity, Unit Of Measures, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatReqDetail_Multiples",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{MMSToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MatReqNo\": \"8200286\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMatReqDetail",
+					"host": [
+						"{{MMSURL}}GetMatReqDetail"
+					]
+				},
+				"description": "Micron middle tier need to provide the MatReq details <br/>\r\nInput: MatReq Number<br/>\r\nOutput: MatReq Number, Micron Part Number, Lot No, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatReqDetail_Single",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MatReqNo\": \"0730000956\",\n    \"MaterialType\":\"CAPILLARY\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMatReqDetail",
+					"host": [
+						"{{MMSURL}}GetMatReqDetail"
+					]
+				},
+				"description": "Micron middle tier need to provide the MatReq details <br/>\r\nInput: MatReq Number<br/>\r\nOutput: MatReq Number, Micron Part Number, Lot No, Quantity, Unit Of Measures"
+			},
+			"response": []
+		},
+		{
+			"name": "DepositCreateMA_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\":\"340-00054\",\n    \"lotNo\": \"KKTEST47\",\n    \"quantity\":6000,\n    \"ExpiredDate\":\"10-12-2019\",\n    \"SystemID\":\"GWMMS\",\n    \"MaterialType\":\"GOLD_WIRE\",\n    \"Username\" :\"lchoong\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}DepositCreateMA",
+					"host": [
+						"{{MMSURL}}DepositCreateMA"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "DepositCreateMA_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\":\"300-01122\",\n    \"lotNo\": \"S3368762-127\",\n    \"quantity\":1,\n    \"ExpiredDate\":\"10-12-2021\",\n    \"SystemID\":\"CAPLMMS\",\n    \"MaterialType\":\"CAPILLARY\",\n    \"Username\" :\"leekeatkean\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}DepositCreateMA",
+					"host": [
+						"{{MMSURL}}DepositCreateMA"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "DepositCreateMA_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\":\"310-B196121B371GX\",\n    \"ManufacturerLotNo\":\"KKLotNumber\",\n    \"lotNo\": \"KKTESTSUBSTRATE\",\n    \"quantity\":10,\n    \"adjustedquantity\":8,\n    \"ExpiredDate\":\"10-12-2022\",\n    \"SystemID\":\"SLMMS\",\n    \"MaterialType\":\"SUBSTRATE\",\n    \"Username\" :\"leekeatkean\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}DepositCreateMA",
+					"host": [
+						"{{MMSURL}}DepositCreateMA"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "DepositCreateMA_SolderBall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\":\"xxx-00054\",\n    \"lotNo\": \"KKTEST47-001\",\n    \"quantity\":6000,\n    \"ExpiredDate\":\"10-12-2019\",\n    \"ExpiredDate2\":\"10-12-2019 16:16\",\n    \"SystemID\":\"MMS\",\n    \"MaterialType\":\"SOLDER_BALL\",\n    \"Username\" :\"LEEKEATKEAN\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}DepositCreateMA",
+					"host": [
+						"{{MMSURL}}DepositCreateMA"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "DepositCreateMA_Daf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\":\"320-00716\",\n    \"lotNo\": \"KKTEST4\",\n    \"quantity\":300,\n    \"ExpiredDate\":\"10-12-2021\",\n    \"ExposureStartDateTime\":\"10-12-2021 20:19\",\n    \"SystemID\":\"MMS\",\n    \"MaterialType\":\"DAF_TAPE\",\n    \"Username\" :\"LEEKEATKEAN\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}DepositCreateMA",
+					"host": [
+						"{{MMSURL}}DepositCreateMA"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "MATrackOut_Daf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lotNo\": \"KKTEST\",\n    \"SystemID\":\"MMS\",\n    \"MaterialType\":\"DAF_TAPE\",\n    \"Username\" :\"LEEKEATKEAN\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}MATrackOut",
+					"host": [
+						"{{MMSURL}}MATrackOut"
+					]
+				},
+				"description": "Micron middle tier service to trigger CreateMA when Deposit after MatReq had been issue <br/>\r\nInput:  MicronPN, Lot No, Quantity, Expired Date <br/>\r\nOutput: MicronPN, Lot No, Quantity, Expired Date, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ChkAuthoriseToDispatch_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17f1c0de-951b-320f-a651-882e53db3dd0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\": \"340-00036\",\n    \"BatchNo\":\"S2051301\",\n\t\"LotNo\" : \"S2051301-012\",\n    \"equipID\": \"ICN320\",\n    \"Quantity\": 3000,\n    \"SpoolStatus\" : \"NEW\",\n    \"Mode\" :\"DISABLE_MAM\",\n    \"Username\": \"LEEKEATKEAN\",\n    \"SystemID\":\"GWLMMS\",\n    \"MaterialType\": \"GOLD_WIRE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ChkAuthoriseToDispatch",
+					"host": [
+						"{{MMSURL}}ChkAuthoriseToDispatch"
+					]
+				},
+				"description": "Micron will provide Inventory Id(MICRON PN) and Good to dispatch, or Failed to dispatch (with reason).<br/>\r\nInput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID<br/>\r\nOutput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ChkAuthoriseToDispatch_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17f1c0de-951b-320f-a651-882e53db3dd0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\": \"340-00036\",\n    \"LotNo\": \"xxxxx\",\n    \"Mode\": \"DISABLE_MAM\",\n    \"Username\": \"LEEKEATKEAN\",\n    \"SystemID\": \"SLMMS\",\n    \"InHouseMark\": \"YES/NO\",\n   \"SpoolStatus\":\"NEW/USED\",\n    \"LotList\": {\n        \"Lots\": [\n            {\n                \"Id\": \"XXX\",\n                \"Quantity\": 1,\n                 \"Action\": \"Enum-MERGE,STANDALONE,LOCATION\"\n            },\n            {\n                \"Id\": \"XXXx\",\n                \"Quantity\": 10,\n                 \"Action\": \"Enum-MERGE,STANDALONE,LOCATION\"\n            }\n        ]\n    },\n    \"NewMergeLotId\": \"NewID\",\n    \"MaterialType\": \"SUBSTRATE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ChkAuthoriseToDispatch",
+					"host": [
+						"{{MMSURL}}ChkAuthoriseToDispatch"
+					]
+				},
+				"description": "Micron will provide Inventory Id(MICRON PN) and Good to dispatch, or Failed to dispatch (with reason).<br/>\r\nInput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID<br/>\r\nOutput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ChkAuthoriseToDispatch_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17f1c0de-951b-320f-a651-882e53db3dd0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\": \"340-00036\",\n    \"BatchNo\":\"S2051301\",\n\t\"LotNo\" : \"S2051301-012\",\n    \"equipID\": \"ICN320\",\n    \"Quantity\": 3000,\n    \"SpoolStatus\" : \"NEW\",\n    \"Mode\" :\"DISABLE_MAM\",\n    \"Username\": \"LEEKEATKEAN\",\n    \"SystemID\":\"CAPLMMS\",\n    \"MaterialType\": \"GOLD_WIRE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ChkAuthoriseToDispatch",
+					"host": [
+						"{{MMSURL}}ChkAuthoriseToDispatch"
+					]
+				},
+				"description": "Micron will provide Inventory Id(MICRON PN) and Good to dispatch, or Failed to dispatch (with reason).<br/>\r\nInput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID<br/>\r\nOutput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ChkAuthoriseToDispatch_SolderBall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\": \"340-00054\",\n    \"BatchNo\":\"KKTEST\",\n\t\"LotNo\" : \"KKTEST-001\",\n    \"equipID\": \"ICN498\",\n    \"Quantity\": 6000,\n    \"SpoolStatus\" : \"NEW\",\n    \"Mode\" :\"DISABLE_SAP\",\n    \"Username\": \"LEEKEATKEAN\",\n    \"MaterialType\": \"SOLDER_BALL\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ChkAuthoriseToDispatch",
+					"host": [
+						"{{MMSURL}}ChkAuthoriseToDispatch"
+					]
+				},
+				"description": "Micron will provide Inventory Id(MICRON PN) and Good to dispatch, or Failed to dispatch (with reason).<br/>\r\nInput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID<br/>\r\nOutput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ChkAuthoriseToDispatch_DafTape",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"micronPN\": \"340-00054\",\n    \"MicronLotId\":\"\",\n    \"LotNo2\":\"\",\n    \"BatchNo\":\"KKTEST\",\n\t\"LotNo\" : \"KKTEST-001\",\n    \"equipID\": \"ICN498\",\n    \"Quantity\": 6000,\n    \"SpoolStatus\" : \"NEW\",\n    \"Mode\" :\"DISABLE_SAP\",\n    \"Username\": \"LEEKEATKEAN\",\n    \"MaterialType\": \"SOLDER_BALL\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ChkAuthoriseToDispatch",
+					"host": [
+						"{{MMSURL}}ChkAuthoriseToDispatch"
+					]
+				},
+				"description": "Micron will provide Inventory Id(MICRON PN) and Good to dispatch, or Failed to dispatch (with reason).<br/>\r\nInput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID<br/>\r\nOutput: Lot No, Micron Part Number, Spool Status, Quantity, Equip ID, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnMaterial_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeOfReturn\": \"EXPIRED_DISPOSAL\",\r\n    \"micronPN\": \"340-00047\",\r\n    \"lotNo\": \"9003586584531\",\r\n    \"BatchNo\": \"PC001\",\r\n    \"location\": \"MC99\",\r\n    \"remainingQuantity\": 4514,\r\n    \"Mode\": \"ENABLE_MAM_SAP\",\r\n    \"Username\":\"LEEKEATKEAN\",\r\n    \"EquipID\":\"ICN401\",\r\n    \"SystemID\":\"MMS\",\r\n    \"MaterialType\": \"GOLD_WIRE\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ReturnMaterial",
+					"host": [
+						"{{MMSURL}}ReturnMaterial"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnMaterial_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"micronPN\": \"340-00047\",\r\n    \"lotNo\": \"9003586584531\",\r\n    \"BatchNo\": \"PC001\",\r\n    \"location\": \"MC99\",\r\n    \"remainingQuantity\": 1,\r\n    \"Mode\": \"ENABLE_MAM_SAP\",\r\n    \"Username\":\"LEEKEATKEAN\",\r\n    \"SystemID\":\"SLMMS\",\r\n    \"MaterialType\": \"SUBSTRATE\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ReturnMaterial",
+					"host": [
+						"{{MMSURL}}ReturnMaterial"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateLotLocation_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\": \"LEEKEATKEAN\",\r\n    \"SystemID\": \"SLMMS\",\r\n    \"Action\": \"Enum-MERGE,STANDALONE,LOCATION\",\r\n    \"LotList\": {\r\n        \"Lots\": [\r\n            {\r\n                \"Id\": \"XXX\",\r\n                \"Quantity\": 1,\r\n                \"Location\":\"xxx\"\r\n            },\r\n            {\r\n                \"Id\": \"XXXx\",\r\n                \"Quantity\": 10,\r\n                \"Location\":\"xxx\"\r\n            }\r\n        ]\r\n    },\r\n    \"MaterialType\": \"SUBSTRATE\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}UpdateLotLocation",
+					"host": [
+						"{{MMSURL}}UpdateLotLocation"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckExpirationDate_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"LotNo\": \"xxxxx\",\r\n    \"ExpiredDate\":\"datetime\",\r\n    \"MaterialType\": \"SUBSTRATE\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckExpirationDate",
+					"host": [
+						"{{MMSURL}}CheckExpirationDate"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnMaterial_Substrate_Removal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeOfReturn\": “EXPIRED_DISPOSAL/DAMAGED_STOCK/REMOVE_ONLY”,\r\n    \"micronPN\": \"340-00047\",\r\n    \"lotNo\": \"9003586584531\",\r\n    \"BatchNo\": \"PC001\",\r\n    \"location\": \"MC99\",\r\n    \"SpoolStatus\":\"NEW/USED\"\r\n    \"remainingQuantity\": 1,\r\n    \"Mode\": \"ENABLE_MAM_SAP\",\r\n    \"Username\":\"LEEKEATKEAN\",\r\n    \"SystemID\":\"SLMMS\",\r\n    \"MaterialType\": \"SUBSTRATE\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ReturnMaterial",
+					"host": [
+						"{{MMSURL}}ReturnMaterial"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnMaterial_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeOfReturn\": \"EXCESS_INVENTORY\",\r\n    \"micronPN\": \"300-01993\",\r\n    \"lotNo\": \"3401295-014\",\r\n    \"BatchNo\": \"3401295\",\r\n    \"location\": \"MC15\",\r\n    \"remainingQuantity\": 1,\r\n    \"Mode\": \"DISABLE_MAM\",\r\n    \"Username\":\"LEEKEATKEAN\",\r\n    \"EquipID\":\"ICN214\",\r\n    \"SystemID\":\"CMMS-01\",\r\n    \"MaterialType\": \"CAPILLARY\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ReturnMaterial",
+					"host": [
+						"{{MMSURL}}ReturnMaterial"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnMaterial_SolderBall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 59d5b3db-9ef7-34bd-8863-f54e3e0e5394"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeOfReturn\": \"DAMAGED\",\r\n    \"micronPN\": \"320-00634\",\r\n    \"lotNo\": \"2101061002-757\",\r\n    \"BatchNo\": \"2101061002\",\r\n    \"location\": \"MC99\",\r\n    \"remainingQuantity\": 8.0,\r\n    \"Mode\": \"DISABLE_SAP\",\r\n    \"Username\":\"LEEKEATKEAN\",\r\n    \"EquipID\":\"AU800P-0002\",\r\n    \"SystemID\":\"SBMMS\",\r\n    \"MaterialType\": \"SOLDER_BALL\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}ReturnMaterial",
+					"host": [
+						"{{MMSURL}}ReturnMaterial"
+					]
+				},
+				"description": "Micron middle tier to disassociate the lot location from tool.<br/>\r\nInput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return<br/>\r\nOutput: Lot No, Micron Part Number, Remaining Quantity, Location, Type of Return, Status"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMicronPN_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer da81d584-b161-3bf2-ae95-31abaa7bac70",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MicronLotID\": \"BF76MSP.5X\",\n    \"EquipID\": \"ICN445\",\n    \"StepID\":\"WIRE BOND 2\",\n    \"MaterialType\":\"GOLD_WIRE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMicronPN",
+					"host": [
+						"{{MMSURL}}GetMicronPN"
+					]
+				},
+				"description": "Input: Equip ID, Micron LotID, Step ID <br/>\r\nOutput: Equip ID,  Micron LotID, Step ID, Micron Part Number, Status<br/>\r\nProvide Micron Part Number<br/>\r\n    1.GetMAInfo - Get attr<br/>\r\n    2.ETEquipInfo - Equip type<br/>\r\n    3.GetDocumentInfo or GetDomainForAttrDef - what attr need to resolve RMS<br/>\r\n    4.RMSRecipeResolve - Get part Number<br/>"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMicronPN_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 6904eaee-ec41-307f-9029-8cfa0d91a56c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MicronLotID\": \"BFJ58SP.5X\",\n    \"EquipID\": \"ICN651\",\n    \"StepID\":\"WIRE BOND\",\n    \"MaterialType\":\"CAPILLARY\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMicronPN",
+					"host": [
+						"{{MMSURL}}GetMicronPN"
+					]
+				},
+				"description": "Input: Equip ID, Micron LotID, Step ID <br/>\r\nOutput: Equip ID,  Micron LotID, Step ID, Micron Part Number, Status<br/>\r\nProvide Micron Part Number<br/>\r\n    1.GetMAInfo - Get attr<br/>\r\n    2.ETEquipInfo - Equip type<br/>\r\n    3.GetDocumentInfo or GetDomainForAttrDef - what attr need to resolve RMS<br/>\r\n    4.RMSRecipeResolve - Get part Number<br/>"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMicronPN_SolderBall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 6205767c-411a-333e-8996-54ba2973bfa3",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MicronLotID\": \"HQJNFZ2.11\",\n    \"EquipID\": \"AU800P-0001\",\n    \"StepID\":\"SOLDER BALL/REFLOW\",\n    \"MaterialType\":\"SOLDER_BALL\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMicronPN",
+					"host": [
+						"{{MMSURL}}GetMicronPN"
+					]
+				},
+				"description": "Input: Equip ID, Micron LotID, Step ID <br/>\r\nOutput: Equip ID,  Micron LotID, Step ID, Micron Part Number, Status<br/>\r\nProvide Micron Part Number<br/>\r\n    1.GetMAInfo - Get attr<br/>\r\n    2.ETEquipInfo - Equip type<br/>\r\n    3.GetDocumentInfo or GetDomainForAttrDef - what attr need to resolve RMS<br/>\r\n    4.RMSRecipeResolve - Get part Number<br/>"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMicronPN_DafTape",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MicronLotID\": \"DYDVPN2.11\",\n    \"EquipID\": \"KNICPLA-0062\",\n    \"StepID\":\"WIRE BOND\",\n    \"MaterialType\":\"DAF_TAPE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetMicronPN",
+					"host": [
+						"{{MMSURL}}GetMicronPN"
+					]
+				},
+				"description": "Input: Equip ID, Micron LotID, Step ID <br/>\r\nOutput: Equip ID,  Micron LotID, Step ID, Micron Part Number, Status<br/>\r\nProvide Micron Part Number<br/>\r\n    1.GetMAInfo - Get attr<br/>\r\n    2.ETEquipInfo - Equip type<br/>\r\n    3.GetDocumentInfo or GetDomainForAttrDef - what attr need to resolve RMS<br/>\r\n    4.RMSRecipeResolve - Get part Number<br/>"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipIDList_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 7af28e5c-ed1b-3cb4-acc7-47586f8c8d25",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Facility\": \"ASSEMBLY-MSA\",\n    \"Area\": \"ASSM WIRE BOND-SGP\",\n    \"EquipmentGroup\" :\"ALL CR2 WB MACHINES\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetEquipIDList",
+					"host": [
+						"{{MMSURL}}GetEquipIDList"
+					]
+				},
+				"description": "Input: Facility, Area, Equipment type<br/>\r\nOutput: List of Equipment IDs"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipIDList_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 7af28e5c-ed1b-3cb4-acc7-47586f8c8d25",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Facility\": \"ASSEMBLY-MSA\",\n    \"Area\": \"ASSM WIRE BOND-SGP\",\n    \"EquipmentGroup\" :\"ALL CR2 WB MACHINES\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetEquipIDList",
+					"host": [
+						"{{MMSURL}}GetEquipIDList"
+					]
+				},
+				"description": "Input: Facility, Area, Equipment type<br/>\r\nOutput: List of Equipment IDs"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipIDList_Collet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 7af28e5c-ed1b-3cb4-acc7-47586f8c8d25",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Facility\": \"ASSEMBLY-MSA\",\n    \"Area\": \"ASSM DIE ATTACH -SGP\",\n    \"EquipmentGroup\" :\"ALL CR2 DA MACHINES\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetEquipIDList",
+					"host": [
+						"{{MMSURL}}GetEquipIDList"
+					]
+				},
+				"description": "Input: Facility, Area, Equipment type<br/>\r\nOutput: List of Equipment IDs"
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipmentMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MMSToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"EquipID\":\"ICN531\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}GetEquipmentMaterial",
+					"host": [
+						"{{MMSURL}}GetEquipmentMaterial"
+					]
+				},
+				"description": "Input: Equip ID<br/>\r\nOutput: Equip ID, Child Equip ID, Equip Item"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckHealth",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2d65e6f4-7306-365c-b325-bdcc99cb8c16",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{MMSURL}}CheckHealth",
+					"host": [
+						"{{MMSURL}}CheckHealth"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckHealth_LotLocationTracking",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer d71ca256-e78d-3848-ac36-bd54a0b0ddae",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webapigateway.micron.com/t/app.mfg/lotlocationtracking/v1/PROD/SINGAPORE/CheckHealth",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"t",
+						"app.mfg",
+						"lotlocationtracking",
+						"v1",
+						"PROD",
+						"SINGAPORE",
+						"CheckHealth"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckHealth - Direct Call",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{MMSToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://sibemfgapp/MMSILWebservice/prod/singapore/checkhealth",
+					"protocol": "http",
+					"host": [
+						"sibemfgapp"
+					],
+					"path": [
+						"MMSILWebservice",
+						"prod",
+						"singapore",
+						"checkhealth"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "Am I Alive",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c9162fed-6a1e-3a1d-9133-e4d5dbd73a39"
+					}
+				],
+				"url": {
+					"raw": "{{MMSURL}}IsStillAlive",
+					"host": [
+						"{{MMSURL}}IsStillAlive"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken old",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic MFkwa0hqSFNKWWFFX0RTOXd0cjBJUzV5SEVrYTpVSGVmYzhhNmZYTzlSdjVjeTZOOUdaam5uc2th"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://boapi2prodgtwy.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"boapi2prodgtwy",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "Check API Availaibility"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckUserRights_GoldWire",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer dd17bc2b-50fe-3f90-a53a-176ec6cda759",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"yewliangtan\",\n    \"materialtype\":\"GOLD_WIRE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckUserRights",
+					"host": [
+						"{{MMSURL}}CheckUserRights"
+					]
+				},
+				"description": "Input: Username <br/>\r\nOutput: Username, Role, Status, Message<br/>\r\nRole Read from Config"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckUserRights_Capillary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 935abbcc-6e30-3f3a-80dd-0c2862a3e812",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"knatama\",\n    \"materialtype\":\"CAPILLARY\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckUserRights",
+					"host": [
+						"{{MMSURL}}CheckUserRights"
+					]
+				},
+				"description": "Input: Username <br/>\r\nOutput: Username, Role, Status, Message<br/>\r\nRole Read from Config"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckUserRights_SolderBall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 72d6c47e-ac6b-3a11-a00c-0f07b09ed353"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"ragehsu\",\n    \"materialtype\":\"SOLDER_BALL\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckUserRights",
+					"host": [
+						"{{MMSURL}}CheckUserRights"
+					]
+				},
+				"description": "Input: Username <br/>\r\nOutput: Username, Role, Status, Message<br/>\r\nRole Read from Config"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckUserRights_DafTape",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 25a62c13-c6e5-3ff9-93aa-22a21fd1acc4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"liewkwanying\",\n    \"materialtype\":\"DAF_TAPE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckUserRights",
+					"host": [
+						"{{MMSURL}}CheckUserRights"
+					]
+				},
+				"description": "Input: Username <br/>\r\nOutput: Username, Role, Status, Message<br/>\r\nRole Read from Config"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckUserRights_Substrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer 25a62c13-c6e5-3ff9-93aa-22a21fd1acc4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"liewkwanying\",\n    \"materialtype\":\"SUBSTRATE\"\n}"
+				},
+				"url": {
+					"raw": "{{MMSURL}}CheckUserRights",
+					"host": [
+						"{{MMSURL}}CheckUserRights"
+					]
+				},
+				"description": "Input: Username <br/>\r\nOutput: Username, Role, Status, Message<br/>\r\nRole Read from Config"
+			},
+			"response": []
+		},
+		{
+			"name": "SendEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer e1708741-f19f-391b-8961-8e017b44d40d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"To\": \"LEEKEATKEAN\",\r\n    \"From\": \"MMS\",\r\n    \"CC\": \"LEEKEATKEAN\",\r\n    \"BCC\": \"\",\r\n    \"Subject\": \"This is Title From Server\",\r\n    \"Text\" :\"This is message content\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{MMSURL}}SendEmail",
+					"host": [
+						"{{MMSURL}}SendEmail"
+					]
+				},
+				"description": "Input: To, From, CC, BCC, Subject, Text <br/>\r\nOutput: To, From, CC, BCC, Subject, Text, Status, Message"
+			},
+			"response": []
+		},
+		{
+			"name": "Request ET DAT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "DefaultApplication",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-site-name",
+						"value": "SINGAPORE",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{DATToken}}",
+						"description": "May Need to Change",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{GatewayURL}}{{DatURL}}?systemName=ET&versionName=ETA&credentialName=equipment_tracking_MMS&environment=Production&encryptKey=BE_DEVELOPERS",
+					"host": [
+						"{{GatewayURL}}{{DatURL}}"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ET"
+						},
+						{
+							"key": "versionName",
+							"value": "ETA"
+						},
+						{
+							"key": "credentialName",
+							"value": "equipment_tracking_MMS"
+						},
+						{
+							"key": "environment",
+							"value": "Production"
+						},
+						{
+							"key": "encryptKey",
+							"value": "BE_DEVELOPERS"
+						}
+					]
+				},
+				"description": "Get ET DAT Information"
+			},
+			"response": []
+		},
+		{
+			"name": "Request SAP DAT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "DefaultApplication"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-mt-site-name",
+						"type": "text",
+						"value": "SINGAPORE"
+					},
+					{
+						"description": "May Need to Change",
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer c60550e3-06a6-36c0-b505-8e3e51d4a2f8"
+					}
+				],
+				"url": {
+					"raw": "{{GatewayURL}}{{DatURL}}?systemName=MMSIL&versionName=1.0&credentialName=SapAccount&environment=Production&encryptKey=BE_DEVELOPERS",
+					"host": [
+						"{{GatewayURL}}{{DatURL}}"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "MMSIL"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "SapAccount"
+						},
+						{
+							"key": "environment",
+							"value": "Production"
+						},
+						{
+							"key": "encryptKey",
+							"value": "BE_DEVELOPERS"
+						}
+					]
+				},
+				"description": "Get SAP DAT Information"
+			},
+			"response": []
+		},
+		{
+			"name": "Check Eventual Member",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "DefaultApplication"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"description": "May Need to Change",
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{MTGroupToken}}"
+					}
+				],
+				"url": {
+					"raw": "{{GatewayURL}}{{MTGroupURL}}?groupName=SSC_IT_BE&memberName=LEEKEATKEAN",
+					"host": [
+						"{{GatewayURL}}{{MTGroupURL}}"
+					],
+					"query": [
+						{
+							"key": "groupName",
+							"value": "SSC_IT_BE"
+						},
+						{
+							"key": "memberName",
+							"value": "LEEKEATKEAN"
+						}
+					]
+				},
+				"description": "Return true if member name is a eventual member for the given group. False otherwise."
+			},
+			"response": []
+		},
+		{
+			"name": "Direct RMS Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Body>\r\n        <ril:getRecipePayloadRequest mode=\"Production\" xmlns:ril=\"http://www.camline.com/schemas/ril/services/runtime\">\r\n            <ril:context>\r\n                <ril:name>LOT ID</ril:name>\r\n                <ril:value>BFQN6PN.5X</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>EquipmentType</ril:name>\r\n                <ril:value>KNS RAPIDMEM</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>Equipment</ril:name>\r\n                <ril:value>ICN493</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>STEP ID</ril:name>\r\n                <ril:value>WIRE BOND</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASIC DIE REVISION</ril:name>\r\n                <ril:value>CC</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASIC DESIGN ID</ril:name>\r\n                <ril:value>PS8226</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASIC TEMP SPEC</ril:name>\r\n                <ril:value>WIRELESS</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASM ATLAS PASS</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASM CONV ID</ril:name>\r\n                <ril:value>PKG 06</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ASM ENG LOT DESCRIPT</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>BACKGRIND TAPE INV #</ril:name>\r\n                <ril:value>300-01741</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>CAP SUB PRODUCT ID</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>CAPACITOR 1 INV #</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>CAPACITOR 2 INV #</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>CU BOND PAD TYPE</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>CONFIGURATION WIDTH</ril:name>\r\n                <ril:value>X16</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>DIE IN COMPLETED PKG</ril:name>\r\n                <ril:value>6</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>DIE SITES PER FRAME</ril:name>\r\n                <ril:value>85</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>DIE LEVEL PREDICT</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>DESIGN ID</ril:name>\r\n                <ril:value>J9K8</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>ENG CONTROLLED LOT</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>L/F INVENTORY #</ril:name>\r\n                <ril:value>310-B843209A246A</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>LOT TYPE</ril:name>\r\n                <ril:value>PRODUCTION</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>LEAD COUNT</ril:name>\r\n                <ril:value>254/432</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>MARK 2D APPLIED</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>NUM IO CHANNELS</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>NUM FLASH CE PINS</ril:name>\r\n                <ril:value>2</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>OWNER COMPANY</ril:name>\r\n                <ril:value>MSA</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>PACKAGE TYPE</ril:name>\r\n                <ril:value>VFBGA</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>PLANNED MCP DID</ril:name>\r\n                <ril:value>J9K8</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>POLYIMIDE PROCESS</ril:name>\r\n                <ril:value>YES</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>PRE THIN THICKNESS</ril:name>\r\n                <ril:value>755.00</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>PRODUCT TECHNOLOGY</ril:name>\r\n                <ril:value>ALL IN ONE MCP</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>REQD WAF MOUNT TAPE</ril:name>\r\n                <ril:value>320-00710</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>REQD WAFER THICKNESS</ril:name>\r\n                <ril:value>50.00</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>UNQUALIFIED</ril:name>\r\n                <ril:value/>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>WAFER FLAT DEGREE</ril:name>\r\n                <ril:value>0</ril:value>\r\n            </ril:context>\r\n            <ril:context>\r\n                <ril:name>WAF BSIDE ADHES TYPE</ril:name>\r\n                <ril:value>HR-900T-20-N45</ril:value>\r\n            </ril:context>\r\n            <ril:attributes>\r\n                <ril:name>PAYLOAD.SKIP.PARAMETERS</ril:name>\r\n                <ril:value>FALSE</ril:value>\r\n            </ril:attributes>\r\n            <ril:attributes>\r\n                <ril:name>PAYLOAD.SKIP.BODY</ril:name>\r\n                <ril:value>TRUE</ril:value>\r\n            </ril:attributes>\r\n            <ril:attributes>\r\n                <ril:name>CURRENT_STEP_NICKNAME</ril:name>\r\n                <ril:value>BOND</ril:value>\r\n            </ril:attributes>\r\n            <ril:attributes>\r\n                <ril:name>LOT_ID</ril:name>\r\n                <ril:value>BFQN6PN.5X</ril:value>\r\n            </ril:attributes>\r\n        </ril:getRecipePayloadRequest>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "http://sirilprod:8080/ril-micron/RILRuntimeService",
+					"protocol": "http",
+					"host": [
+						"sirilprod"
+					],
+					"port": "8080",
+					"path": [
+						"ril-micron",
+						"RILRuntimeService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Direct RMS Request MMY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <SOAP-ENV:Body>\r\n    <ril:getRecipePayloadRequest xmlns:ril=\"http://www.camline.com/schemas/ril/services/runtime\" mode=\"Production\">\r\n      <ril:rmsHandle>3730323135332c3135</ril:rmsHandle>\r\n      <ril:attributes>\r\n        <ril:name>PAYLOAD.SKIP.PARAMETERS</ril:name>\r\n        <ril:value>TRUE</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>PAYLOAD.SKIP.BODY</ril:name>\r\n        <ril:value>FALSE</ril:value>\r\n      </ril:attributes>\r\n    </ril:getRecipePayloadRequest>\r\n  </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>"
+				},
+				"url": {
+					"raw": "http://myrilprod:8080/ril-micron/RILRuntimeService",
+					"protocol": "http",
+					"host": [
+						"myrilprod"
+					],
+					"port": "8080",
+					"path": [
+						"ril-micron",
+						"RILRuntimeService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Direct RMS Request Beta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <SOAP-ENV:Body>\r\n    <ril:getRecipePayloadRequest mode=\"Production\" xmlns:ril=\"http://www.camline.com/schemas/ril/services/runtime\">\r\n      <ril:context>\r\n        <ril:name>LOT ID</ril:name>\r\n        <ril:value>0980341.001</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>EquipmentType</ril:name>\r\n        <ril:value>DSCO DGP8762</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ETState</ril:name>\r\n        <ril:value>WAIT_PRODUCTION</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>Equipment</ril:name>\r\n        <ril:value>DSG8762-0020</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>STEP ID</ril:name>\r\n        <ril:value>WAFER THINNING</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASIC BSIDEADHES TYPE</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASM CONV ID</ril:name>\r\n        <ril:value>PKG 33</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASIC DIE REVISION</ril:name>\r\n        <ril:value>BB</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASIC DESIGN ID</ril:name>\r\n        <ril:value>SM2752</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASM SILICON USE</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASIC TARGET WAF THK</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASIC TEMP SPEC</ril:name>\r\n        <ril:value>WIRELESS</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASM ATLAS PASS</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASM PROCESS ID</ril:name>\r\n        <ril:value>MSB ASSEMBLY</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ASM ENG LOT DESCRIPT</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>BACKGRIND TAPE INV #</ril:name>\r\n        <ril:value>300-01741</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CAP SUB PRODUCT ID</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CAPACITOR 1 INV #</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CAPACITOR 2 INV #</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CARRIER SIZE</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CU BOND PAD TYPE</ril:name>\r\n        <ril:value>ALM2</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>CONFIGURATION WIDTH</ril:name>\r\n        <ril:value>X8</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>DIE IN COMPLETED PKG</ril:name>\r\n        <ril:value>8</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>DIE SITES PER FRAME</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>DIE LEVEL PREDICT</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>DESIGN ID</ril:name>\r\n        <ril:value>B16C</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ENCAP METHOD</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>EDGE TRIM BLADE INV#</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ENCAP COMPOUND TYPE</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>ENG CONTROLLED LOT</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>FUNCTION MARK</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>L/F INVENTORY #</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>LOT TYPE</ril:name>\r\n        <ril:value>PRODUCTION</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>LEAD COUNT</ril:name>\r\n        <ril:value>254/432</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>MARK 2D APPLIED</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>MARK 2D REQD</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>MARK LAYOUT REVISION</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>MINOR ASM CONV ID</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>NUM IO CHANNELS</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>NUM FLASH CE PINS</ril:name>\r\n        <ril:value>4</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>OWNER COMPANY</ril:name>\r\n        <ril:value>MSA</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>PACKAGE TYPE</ril:name>\r\n        <ril:value>TFBGA</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>PKG PARTING LINE DIM</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>PLANNED MCP DID</ril:name>\r\n        <ril:value>JG9J</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>POLYIMIDE PROCESS</ril:name>\r\n        <ril:value>YES</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>PRE THIN THICKNESS</ril:name>\r\n        <ril:value>758.00</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>PRODUCT TECHNOLOGY</ril:name>\r\n        <ril:value>MASS FLASH</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>REQD WAF MOUNT TAPE</ril:name>\r\n        <ril:value>320-00711</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>REQD WAFER THICKNESS</ril:name>\r\n        <ril:value>50.00</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>SAW BLADE Z1 INV #</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>SAW BLADE Z2 INV #</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>SKIP ASM O/S TEST</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>SPECIAL MARK CHARS</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>STRIP MAP APPLIED</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>SUB MARK 2D APPLIED</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>TARGET WAF THICKNESS</ril:name>\r\n        <ril:value>790.00</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>UNQUALIFIED</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>WAFER FLAT DEGREE</ril:name>\r\n        <ril:value>0</ril:value>\r\n      </ril:context>\r\n      <ril:context>\r\n        <ril:name>WAF BSIDE ADHES TYPE</ril:name>\r\n        <ril:value />\r\n      </ril:context>\r\n      <ril:attributes>\r\n        <ril:name>PAYLOAD.SKIP.PARAMETERS</ril:name>\r\n        <ril:value>FALSE</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>PAYLOAD.SKIP.BODY</ril:name>\r\n        <ril:value>TRUE</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>CURRENT_STEP_NICKNAME</ril:name>\r\n        <ril:value>WTHIN</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>LOT_ID</ril:name>\r\n        <ril:value>0980341.001</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>EquipmentType</ril:name>\r\n        <ril:value>DSCO DGP8762</ril:value>\r\n      </ril:attributes>\r\n      <ril:attributes>\r\n        <ril:name>Equipment</ril:name>\r\n        <ril:value>DSG8762-0020</ril:value>\r\n      </ril:attributes>\r\n    </ril:getRecipePayloadRequest>\r\n  </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>"
+				},
+				"url": {
+					"raw": "http://sirilbeta:8080/ril-micron/RILRuntimeService",
+					"protocol": "http",
+					"host": [
+						"sirilbeta"
+					],
+					"port": "8080",
+					"path": [
+						"ril-micron",
+						"RILRuntimeService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MatReq Stock DLVY LOC - Z_MM_STOCK_DLVY_LOC",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{SAPToken}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ==",
+						"type": "text"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_STOCK_DLVY_LOC",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <urn:Z_MM_STOCK_DLVY_LOC>\r\n        <ACCT_GROUP>Z001</ACCT_GROUP>\r\n        <PLANT_LOC>SG01</PLANT_LOC>\r\n        <T_DELIVERY_LOCATIONS>\r\n\t\t</T_DELIVERY_LOCATIONS>\r\n        <T_MATERIALS>\r\n\t\t</T_MATERIALS>\r\n      </urn:Z_MM_STOCK_DLVY_LOC>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for valid delivery locations for plant<br/>\r\nObject Name: Z_MM_STOCK_DLVY_LOC<br/>\r\nInputs: Acct group, plant (both are mandat)"
+			},
+			"response": []
+		},
+		{
+			"name": "MMS_Used_MatReq Details - Z_MM_MATREQ_MATDOC_DTL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_MATREQ_MATDOC_DTL"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <urn:Z_MM_MATREQ_MATDOC_DTL>\r\n         <LOT_NO/>\r\n    <MATERIAL_DOC_DET>\r\n    </MATERIAL_DOC_DET>\r\n    <MATERIAL_NO/>\r\n    <MATREQ_NO>0008146105</MATREQ_NO>\r\n    <MAT_DOC/>\r\n    <MOVEMENT_CODE/>\r\n    <POSTING_DATE/>\r\n    <RETURN>\r\n    </RETURN>\r\n      </urn:Z_MM_MATREQ_MATDOC_DTL>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for matreq details<br/>\r\nObject Name: Z_MM_MATREQ_MATDOC_DTL<br/>\r\nInputs: Either Matreq No  or material document no, posting date. Material number,batch number, movement type(Optional)"
+			},
+			"response": []
+		},
+		{
+			"name": "MatReq Details - Z_MM_MATREQ_ORDER_DETAILS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_MATREQ_MATDOC_DTL"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n<urn:Z_MM_MATREQ_ORDER_DETAILS>\r\n <ORDERTEXTHEADERS>\r\n </ORDERTEXTHEADERS>\r\n <ORDERTEXTLINES>\r\n </ORDERTEXTLINES>\r\n <PLANT>SG01</PLANT>\r\n <P_LANGUAGE>E</P_LANGUAGE>\r\n <RETURN>\r\n </RETURN>\r\n <SALES_ORDERS>\r\n </SALES_ORDERS>\r\n <SALES_ORDER_LINES>\r\n </SALES_ORDER_LINES>\r\n <VBELN>0000004487</VBELN>\r\n</urn:Z_MM_MATREQ_ORDER_DETAILS>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for matreq details<br/>\r\nObject Name: Z_MM_MATREQ_ORDER_DETAILS<br/>\r\nInputs: Matreq No"
+			},
+			"response": []
+		},
+		{
+			"name": "MatReq Order Status - Z_MM_MATREQ_ORDER_STATUS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_MATREQ_ORDER_STATUS"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n\r\n<urn:Z_MM_MATREQ_ORDER_STATUS>\r\n  <RETURN>\r\n    <item>\r\n      <TYPE/>\r\n      <ID/>\r\n      <NUMBER/>\r\n      <MESSAGE/>\r\n      <LOG_NO/>\r\n      <LOG_MSG_NO/>\r\n      <MESSAGE_V1/>\r\n      <MESSAGE_V2/>\r\n      <MESSAGE_V3/>\r\n      <MESSAGE_V4/>\r\n      <PARAMETER/>\r\n      <ROW/>\r\n      <FIELD/>\r\n      <SYSTEM/>\r\n    </item>\r\n    <item>\r\n      <TYPE/>\r\n      <ID/>\r\n      <NUMBER/>\r\n      <MESSAGE/>\r\n      <LOG_NO/>\r\n      <LOG_MSG_NO/>\r\n      <MESSAGE_V1/>\r\n      <MESSAGE_V2/>\r\n      <MESSAGE_V3/>\r\n      <MESSAGE_V4/>\r\n      <PARAMETER/>\r\n      <ROW/>\r\n      <FIELD/>\r\n      <SYSTEM/>\r\n    </item>\r\n  </RETURN>\r\n  <SALES_ORDER_STATUS>\r\n    <item>\r\n      <TYPE/>\r\n      <VBELN/>\r\n      <NUMBER/>\r\n      <MESSAGE/>\r\n      <ERDAT/>\r\n      <ERZET/>\r\n      <MESSAGE_V1/>\r\n      <MESSAGE_V2/>\r\n    </item>\r\n    <item>\r\n      <TYPE>S</TYPE>\r\n      <VBELN/>\r\n      <NUMBER/>\r\n      <MESSAGE/>\r\n      <ERDAT/>\r\n      <ERZET/>\r\n      <MESSAGE_V1/>\r\n      <MESSAGE_V2/>\r\n    </item>\r\n  </SALES_ORDER_STATUS>\r\n  <VBELN>0000004487</VBELN>\r\n</urn:Z_MM_MATREQ_ORDER_STATUS>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API to get matreq status<br/>\r\nObject Nmae:Z_MM_MATREQ_ORDER_STATUS<br/>\r\nInput: matreq no"
+			},
+			"response": []
+		},
+		{
+			"name": "MatReq OrderGetByMat - Z_MM_MATREQ_ORDER_GETBYMAT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_MATREQ_ORDER_GETBYMAT"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n\t<urn:Z_MM_MATREQ_ORDER_GETBYMAT>\r\n\t  <CREATED_BY_USER></CREATED_BY_USER>\r\n\t  <DELIVERY_PRIORITY> </DELIVERY_PRIORITY>\r\n\t  <DELIVER_TO_USER></DELIVER_TO_USER>\r\n\t  <DISTRIBUTION_CHANNEL>99</DISTRIBUTION_CHANNEL>\r\n\t  <DIVISION>01</DIVISION>\r\n\t  <DOCUMENT_DATES>\r\n\t    <item>\r\n\t      <SIGN>I</SIGN>\r\n\t      <OPTION>BT</OPTION>\r\n\t      <AUDAT_LOW>2010-10-07</AUDAT_LOW>\r\n\t      <AUDAT_HIGH>2019-05-05</AUDAT_HIGH>\r\n\t    </item>\r\n\t  </DOCUMENT_DATES>\r\n\t  <DOCUMENT_TIMES> </DOCUMENT_TIMES>\r\n\t  <EQUIPMENT> </EQUIPMENT>\r\n\t  <FILLED_BY_USER> </FILLED_BY_USER>\r\n\t  <ITEM_PROPOSAL_TYPE>ZMTQ</ITEM_PROPOSAL_TYPE>\r\n\t  <MATERIAL_NUMBERS>\r\n\t    <item>\r\n\t      <SIGN>I</SIGN>\r\n\t      <OPTION>EQ</OPTION>\r\n\t      <MATNR_LOW>300-00099</MATNR_LOW>\r\n\t      <MATNR_HIGH/>\r\n\t      <MATNR_HIGH_EXTERNAL/>\r\n\t      <MATNR_HIGH_GUID/>\r\n\t      <MATNR_HIGH_VERSION/>\r\n\t      <MATNR_LOW_EXTERNAL/>\r\n\t      <MATNR_LOW_GUID/>\r\n\t      <MATNR_LOW_VERSION/>\r\n\t    </item>\r\n\t  </MATERIAL_NUMBERS>\r\n\t  <MATREQ_NUMBERS> </MATREQ_NUMBERS>\r\n\t  <MAXROWS>8000</MAXROWS>\r\n\t  <PLANT/>\r\n\t  <P_LANGUAGE>EN</P_LANGUAGE>\r\n\t  <RETURN>\r\n\t    <item>\r\n\t      <TYPE/>\r\n\t      <ID/>\r\n\t      <NUMBER/>\r\n\t      <MESSAGE/>\r\n\t      <LOG_NO/>\r\n\t      <LOG_MSG_NO/>\r\n\t      <MESSAGE_V1/>\r\n\t      <MESSAGE_V2/>\r\n\t      <MESSAGE_V3/>\r\n\t      <MESSAGE_V4/>\r\n\t      <PARAMETER/>\r\n\t      <ROW/>\r\n\t      <FIELD/>\r\n\t      <SYSTEM/>\r\n\t    </item>\r\n\t    <item>\r\n\t      <TYPE/>\r\n\t      <ID/>\r\n\t      <NUMBER/>\r\n\t      <MESSAGE/>\r\n\t      <LOG_NO/>\r\n\t      <LOG_MSG_NO/>\r\n\t      <MESSAGE_V1/>\r\n\t      <MESSAGE_V2/>\r\n\t      <MESSAGE_V3/>\r\n\t      <MESSAGE_V4/>\r\n\t      <PARAMETER/>\r\n\t      <ROW/>\r\n\t      <FIELD/>\r\n\t      <SYSTEM/>\r\n\t    </item>\r\n\t  </RETURN>\r\n\t  <SALES_ORDERS>\r\n\t    <item>\r\n\t      <VBELN/>\r\n\t      <TRVOG/>\r\n\t      <AUART/>\r\n\t      <VKORG/>\r\n\t      <VTWEG/>\r\n\t      <SPART/>\r\n\t      <KTEXT/>\r\n\t      <ERDAT/>\r\n\t      <ERZET/>\r\n\t      <ERNAM/>\r\n\t      <ANGDT/>\r\n\t      <BNDDT/>\r\n\t      <KUNNR/>\r\n\t      <BSTKD/>\r\n\t      <SHIP_TO/>\r\n\t      <AUFNR/>\r\n\t      <MULTI_AUFNR/>\r\n\t      <AUFTEXT/>\r\n\t    </item>\r\n\t    <item>\r\n\t      <VBELN/>\r\n\t      <TRVOG/>\r\n\t      <AUART/>\r\n\t      <VKORG/>\r\n\t      <VTWEG/>\r\n\t      <SPART/>\r\n\t      <KTEXT/>\r\n\t      <ERDAT/>\r\n\t      <ERZET/>\r\n\t      <ERNAM/>\r\n\t      <ANGDT/>\r\n\t      <BNDDT/>\r\n\t      <KUNNR/>\r\n\t      <BSTKD/>\r\n\t      <SHIP_TO/>\r\n\t      <AUFNR/>\r\n\t      <MULTI_AUFNR/>\r\n\t      <AUFTEXT/>\r\n\t    </item>\r\n\t  </SALES_ORDERS>\r\n\t  <SALES_ORGANIZATION>SG01</SALES_ORGANIZATION>\r\n\t  <STATUS/>\r\n\t  <TRANSACTION_GROUP>0</TRANSACTION_GROUP>\r\n\t  <TXTID/>\r\n\t  <TXTLINE/>\r\n\t  <TXTOBJECT/>\r\n\t  <WORK_ORDERS> </WORK_ORDERS>\r\n\t</urn:Z_MM_MATREQ_ORDER_GETBYMAT>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for display sales orders by material<br/>\r\nObject Name:Z_MM_MATREQ_ORDER_GETBYMAT<br/>\r\nInputs: Division, sales org, Dist channel, transport group, Item proposal type, document dates"
+			},
+			"response": []
+		},
+		{
+			"name": "MMY MMS_Used_Create MatReq Order - Z_MM_STOCK_MATREQ_CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_STOCK_MATREQ_CREATE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n<urn:Z_MM_STOCK_MATREQ_CREATE>\r\n <BEHAVE_WHEN_ERROR></BEHAVE_WHEN_ERROR>\r\n <BINARY_RELATIONSHIPTYPE></BINARY_RELATIONSHIPTYPE>\r\n <CONVERT></CONVERT>\r\n <ERROR_MSG_TABLE>\r\n </ERROR_MSG_TABLE>\r\n <EXTENSIONIN>\r\n </EXTENSIONIN>\r\n <EXTERNAL></EXTERNAL>\r\n <INT_NUMBER_ASSIGNMENT></INT_NUMBER_ASSIGNMENT>\r\n <LOGIC_SWITCH>\r\n </LOGIC_SWITCH>\r\n <ORDER_CCARD>\r\n </ORDER_CCARD>\r\n <ORDER_CFGS_BLOB>\r\n </ORDER_CFGS_BLOB>\r\n <ORDER_CFGS_INST>\r\n </ORDER_CFGS_INST>\r\n <ORDER_CFGS_PART_OF>\r\n </ORDER_CFGS_PART_OF>\r\n <ORDER_CFGS_REF>\r\n </ORDER_CFGS_REF>\r\n <ORDER_CFGS_REFINST>\r\n </ORDER_CFGS_REFINST>\r\n <ORDER_CFGS_VALUE>\r\n </ORDER_CFGS_VALUE>\r\n <ORDER_CFGS_VK>\r\n </ORDER_CFGS_VK>\r\n <ORDER_CONDITIONS_IN>\r\n </ORDER_CONDITIONS_IN>\r\n <ORDER_CONDITIONS_INX>\r\n </ORDER_CONDITIONS_INX>\r\n <ORDER_DETAIL>\r\n </ORDER_DETAIL>\r\n <ORDER_HEADER_IN>\r\n <DOC_TYPE>ZMTQ</DOC_TYPE>\r\n <SALES_ORG>MY01</SALES_ORG>\r\n<DISTR_CHAN>99</DISTR_CHAN>\r\n<DIVISION>01</DIVISION>\r\n<PURCH_DATE>2020-01-12</PURCH_DATE>\r\n<ORD_REASON>7E2</ORD_REASON>\r\n </ORDER_HEADER_IN>\r\n <ORDER_HEADER_INX>\r\n </ORDER_HEADER_INX>\r\n <ORDER_ITEMS_IN>\r\n  <item>\r\n   <MATERIAL>340-00054</MATERIAL>\r\n   <PLANT>MY01</PLANT>\r\n   <TARGET_QTY>1</TARGET_QTY>\r\n  </item>\r\n\r\n </ORDER_ITEMS_IN>\r\n <ORDER_ITEMS_INX>\r\n </ORDER_ITEMS_INX>\r\n <ORDER_KEYS>\r\n </ORDER_KEYS>\r\n <ORDER_PARTNERS>\r\n  <item>\r\n   <PARTN_ROLE>AG</PARTN_ROLE>\r\n   <PARTN_NUMB>0000000102</PARTN_NUMB>\r\n  </item>\r\n </ORDER_PARTNERS>\r\n <ORDER_SCHEDULES_IN>\r\n  <item>\r\n  <ITM_NUMBER>000001</ITM_NUMBER>\r\n<SCHED_LINE>0001</SCHED_LINE>\r\n<REQ_DATE>2020-01-11</REQ_DATE>\r\n<REQ_QTY>1</REQ_QTY>\r\n  </item>\r\n\r\n </ORDER_SCHEDULES_IN>\r\n <ORDER_SCHEDULES_INX>\r\n </ORDER_SCHEDULES_INX>\r\n <ORDER_TEXT>\r\n </ORDER_TEXT>\r\n <PARTITION></PARTITION>\r\n <PARTNERADDRESSES>\r\n </PARTNERADDRESSES>\r\n <RETURN>\r\n </RETURN>\r\n <SALESDOCUMENTIN></SALESDOCUMENTIN>\r\n <SENDER>\r\n  <LOG_SYSTEM></LOG_SYSTEM>\r\n </SENDER>\r\n <TESTRUN></TESTRUN>\r\n <VARIANT></VARIANT>\r\n</urn:Z_MM_STOCK_MATREQ_CREATE>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for Create MatReq Order<br/>\r\nObject Name:Z_MM_STOCK_MATREQ_CREATE<br/>\r\nInputs: Micron Part Number, Quantity and Unit of Measure"
+			},
+			"response": []
+		},
+		{
+			"name": "MTB MMS_Used_Create MatReq Order - Z_MM_STOCK_MATREQ_CREATE Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_STOCK_MATREQ_CREATE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:n0=\"urn:sap-com:document:sap:rfc:functions\">\n  <SOAP-ENV:Body>\n    <n0:Z_MM_STOCK_MATREQ_CREATE xmlns:n0=\"urn:sap-com:document:sap:rfc:functions\">\n      <BEHAVE_WHEN_ERROR/>\n      <BINARY_RELATIONSHIPTYPE/>\n      <CONVERT/>\n      <ERROR_MSG_TABLE/>\n      <EXTENSIONIN/>\n      <EXTERNAL/>\n      <INT_NUMBER_ASSIGNMENT/>\n      <LOGIC_SWITCH/>\n      <ORDER_CCARD/>\n      <ORDER_CFGS_BLOB/>\n      <ORDER_CFGS_INST/>\n      <ORDER_CFGS_PART_OF/>\n      <ORDER_CFGS_REF/>\n      <ORDER_CFGS_REFINST/>\n      <ORDER_CFGS_VALUE/>\n      <ORDER_CFGS_VK/>\n      <ORDER_CONDITIONS_IN/>\n      <ORDER_CONDITIONS_INX/>\n      <ORDER_DETAIL/>\n      <ORDER_HEADER_IN>\n        <DOC_TYPE>ZMTQ</DOC_TYPE>\n        <SALES_ORG>TW03</SALES_ORG>\n        <DISTR_CHAN>99</DISTR_CHAN>\n        <DIVISION>01</DIVISION>\n        <PURCH_DATE>2019-05-04</PURCH_DATE>\n        <ORD_REASON>IZ2</ORD_REASON>\n      </ORDER_HEADER_IN>\n      <ORDER_HEADER_INX/>\n      <ORDER_ITEMS_IN>\n        <item>\n          <MATERIAL>340-00054</MATERIAL>\n          <PLANT>TW03</PLANT>\n          <TARGET_QTY>6000</TARGET_QTY>\n          <DLV_PRIO>03</DLV_PRIO>\n        </item>\n      </ORDER_ITEMS_IN>\n      <ORDER_ITEMS_INX/>\n      <ORDER_KEYS/>\n      <ORDER_PARTNERS>\n        <item>\n          <PARTN_ROLE>AG</PARTN_ROLE>\n          <PARTN_NUMB>0000000136</PARTN_NUMB>\n        </item>\n      </ORDER_PARTNERS>\n      <ORDER_SCHEDULES_IN>\n        <item>\n          <ITM_NUMBER>000001</ITM_NUMBER>\n          <SCHED_LINE>0001</SCHED_LINE>\n          <REQ_DATE>2020-05-15</REQ_DATE>\n          <REQ_QTY>6000</REQ_QTY>\n        </item>\n      </ORDER_SCHEDULES_IN>\n      <ORDER_SCHEDULES_INX/>\n      <ORDER_TEXT/>\n      <PARTITION/>\n      <PARTNERADDRESSES/>\n      <RETURN/>\n      <SALESDOCUMENTIN/>\n      <SENDER>\n        <LOG_SYSTEM/>\n      </SENDER>\n      <TESTRUN/>\n      <VARIANT/>\n    </n0:Z_MM_STOCK_MATREQ_CREATE>\n  </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>\n"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for Create MatReq Order<br/>\r\nObject Name:Z_MM_STOCK_MATREQ_CREATE<br/>\r\nInputs: Micron Part Number, Quantity and Unit of Measure"
+			},
+			"response": []
+		},
+		{
+			"name": "MMY MMS_Used_Create Return Order - Z_MM_STOCK_RETURN_CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_MATREQ_API:Z_MM_STOCK_RETURN_CREATE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <urn:Z_MM_STOCK_RETURN_CREATE>\r\n         <BEHAVE_WHEN_ERROR></BEHAVE_WHEN_ERROR>\r\n         <BINARY_RELATIONSHIPTYPE></BINARY_RELATIONSHIPTYPE>\r\n         <!--Optional:-->\r\n         <CONVERT></CONVERT>\r\n         <!--Optional:-->\r\n         <EXTENSIONIN>\r\n         </EXTENSIONIN>\r\n         <INT_NUMBER_ASSIGNMENT></INT_NUMBER_ASSIGNMENT>\r\n         <LOGIC_SWITCH>\r\n            <PRICING></PRICING>\r\n            <ATP_WRKMOD></ATP_WRKMOD>\r\n            <SCHEDULING></SCHEDULING>\r\n            <NOSTRUCTURE></NOSTRUCTURE>\r\n            <COND_HANDL></COND_HANDL>\r\n            <ADDR_CHECK></ADDR_CHECK>\r\n         </LOGIC_SWITCH>\r\n         <!--Optional:-->\r\n         <PARTNERADDRESSES>\r\n            <!--Zero or more repetitions:-->\r\n          \r\n         </PARTNERADDRESSES>\r\n         <!--Optional:-->\r\n         <RETURN>\r\n\r\n         </RETURN>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_BLOB>\r\n\r\n         </RETURN_CFGS_BLOB>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_INST>\r\n\r\n         </RETURN_CFGS_INST>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_PART_OF>\r\n\r\n         </RETURN_CFGS_PART_OF>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_REF>\r\n\r\n         </RETURN_CFGS_REF>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_REFINST>\r\n \r\n         </RETURN_CFGS_REFINST>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_VALUE>\r\n         </RETURN_CFGS_VALUE>\r\n         <!--Optional:-->\r\n         <RETURN_CFGS_VK>\r\n\r\n         </RETURN_CFGS_VK>\r\n         <!--Optional:-->\r\n         <RETURN_CONDITIONS_IN>\r\n         </RETURN_CONDITIONS_IN>\r\n         <RETURN_HEADER_IN>\r\n            <DOC_TYPE>ZRTS</DOC_TYPE>\r\n            <SALES_ORG>MY01</SALES_ORG>\r\n            <DISTR_CHAN>99</DISTR_CHAN>\r\n            <DIVISION>01</DIVISION>\r\n           \r\n            <REQ_DATE_H>2020-01-14</REQ_DATE_H>\r\n            <ORD_REASON>7E2</ORD_REASON>\r\n            <PURCH_NO_C>TEST</PURCH_NO_C>\r\n  \r\n         </RETURN_HEADER_IN>\r\n         <RETURN_HEADER_INX>\r\n            <DOC_TYPE>X</DOC_TYPE>\r\n            <SALES_ORG>X</SALES_ORG>\r\n            <DISTR_CHAN>X</DISTR_CHAN>\r\n            <DIVISION>X</DIVISION>\r\n            <REQ_DATE_H>X</REQ_DATE_H>\r\n            <ORD_REASON>X</ORD_REASON>\r\n           \r\n            <PURCH_NO_C>X</PURCH_NO_C>\r\n           \r\n         </RETURN_HEADER_INX>\r\n         <!--Optional:-->\r\n         <RETURN_ITEMS_IN>\r\n            <!--Zero or more repetitions:-->\r\n            <item>\r\n               <ITM_NUMBER>000001</ITM_NUMBER>\r\n               <MATERIAL>340-00054</MATERIAL>\r\n               <PLANT>MY01</PLANT>\r\n               <TARGET_QTY>1</TARGET_QTY>\r\n            </item>\r\n         </RETURN_ITEMS_IN>\r\n         <!--Optional:-->\r\n         <RETURN_ITEMS_INX>\r\n            <!--Zero or more repetitions:-->\r\n            <item>\r\n               <ITM_NUMBER>000001</ITM_NUMBER>\r\n  \r\n               <MATERIAL>X</MATERIAL>\r\n               <PLANT>X</PLANT>\r\n               <TARGET_QTY>X</TARGET_QTY>\r\n              \r\n            </item>\r\n         </RETURN_ITEMS_INX>\r\n         <!--Optional:-->\r\n         <RETURN_KEYS>\r\n         </RETURN_KEYS>\r\n         <!--Optional:-->\r\n         <RETURN_PARTNERS>\r\n            <!--Zero or more repetitions:-->\r\n            <item>\r\n               <PARTN_ROLE>WE</PARTN_ROLE>\r\n               <PARTN_NUMB>0000000102</PARTN_NUMB>\r\n            </item>\r\n         </RETURN_PARTNERS>\r\n         <!--Optional:-->\r\n         <RETURN_SCHEDULES_IN>\r\n            <!--Zero or more repetitions:-->\r\n            <item>\r\n               <ITM_NUMBER>000001</ITM_NUMBER>\r\n               <SCHED_LINE>0001</SCHED_LINE>\r\n               <REQ_DATE>2020-01-13</REQ_DATE>\r\n               <REQ_QTY>1</REQ_QTY>\r\n            </item>\r\n         </RETURN_SCHEDULES_IN>\r\n         <!--Optional:-->\r\n         <RETURN_SCHEDULES_INX>\r\n            <!--Zero or more repetitions:-->\r\n            <item>\r\n               <ITM_NUMBER>000001</ITM_NUMBER>\r\n               <SCHED_LINE>0001</SCHED_LINE>\r\n               <REQ_DATE>X</REQ_DATE>\r\n               <REQ_QTY>X</REQ_QTY>\r\n            </item>\r\n         </RETURN_SCHEDULES_INX>\r\n         <!--Optional:-->\r\n         <RETURN_TEXT>\r\n         <item>\r\n          <DOC_NUMBER></DOC_NUMBER>\r\n          <ITM_NUMBER></ITM_NUMBER>\r\n          <TEXT_ID>02</TEXT_ID>\r\n          <LANGU>E</LANGU>\r\n          <LANGU_ISO>E</LANGU_ISO>\r\n          <FORMAT_COL></FORMAT_COL>\r\n          <TEXT_LINE>Order Type</TEXT_LINE>\r\n          <FUNCTION></FUNCTION>\r\n         </item>\r\n         </RETURN_TEXT>\r\n         <SALESDOCUMENTIN></SALESDOCUMENTIN>\r\n         <SENDER>\r\n            <LOG_SYSTEM></LOG_SYSTEM>\r\n         </SENDER>\r\n         <TESTRUN></TESTRUN>\r\n      </urn:Z_MM_STOCK_RETURN_CREATE>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for Create Return Order<br/>\r\nObject Name:Z_MM_STOCK_RETURN_CREATE<br/>\r\nMC99 to MC15"
+			},
+			"response": []
+		},
+		{
+			"name": "STOCKRM StockRoomMatAval - Z_MM_STOCK_BATCH_QTY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_BATCH_QTY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <urn:Z_MM_STOCK_BATCH_QTY>\r\n         <I_TABLE_TYPE>R</I_TABLE_TYPE>\r\n    <T_MATNR>\r\n        <item>\r\n            <SIGN>I</SIGN>\r\n            <OPTION>EQ</OPTION>\r\n            <LOW>10002</LOW>\r\n            <HIGH/>\r\n        </item>\r\n    </T_MATNR>\r\n    <T_MATNR_LIST>\r\n        <item>\r\n            <MATNR/>\r\n            <ZOPTION/>\r\n            <ZMATNR_HIGH/>\r\n            <ZSIGN/>\r\n        </item>\r\n        <item>\r\n            <MATNR/>\r\n            <ZOPTION/>\r\n            <ZMATNR_HIGH/>\r\n            <ZSIGN/>\r\n        </item>\r\n    </T_MATNR_LIST>\r\n    <T_QUANTITIES>\r\n        <item>\r\n            <MANDT/>\r\n            <MATNR/>\r\n            <WERKS/>\r\n            <LGORT/>\r\n            <CHARG/>\r\n            <UNRESTRICTED_QTY/>\r\n            <RESTRICTED_QTY/>\r\n            <UOM/>\r\n            <LVORM/>\r\n            <VFDAT/>\r\n            <LIFNR/>\r\n            <ZUSTD/>\r\n        </item>\r\n        <item>\r\n            <MANDT/>\r\n            <MATNR/>\r\n            <WERKS/>\r\n            <LGORT/>\r\n            <CHARG/>\r\n            <UNRESTRICTED_QTY/>\r\n            <RESTRICTED_QTY/>\r\n            <UOM/>\r\n            <LVORM/>\r\n            <VFDAT/>\r\n            <LIFNR/>\r\n            <ZUSTD/>\r\n        </item>\r\n    </T_QUANTITIES>\r\n    <T_WERKS>\r\n        <item>\r\n            <SIGN>I</SIGN>\r\n            <OPTION>EQ</OPTION>\r\n            <PLANT_LOW>SG01</PLANT_LOW>\r\n            <PLANT_HIGH/>\r\n        </item>\r\n    </T_WERKS>\r\n      </urn:Z_MM_STOCK_BATCH_QTY>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "API to check for stock room material availability<br/>\r\nObject Name: Z_MM_STOCK_BATCH_QTY<br/>\r\nInputs: Material, plant (multiple possible)"
+			},
+			"response": []
+		},
+		{
+			"name": "MMS_Used_STOCKRM STOCK_SLOC - Z_MM_STOCK_SLOC_STOCK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_SLOC_STOCK"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n  <soapenv:Header/>\r\n  <soapenv:Body>\r\n    <urn:Z_MM_STOCK_SLOC_STOCK>\r\n      <RETURN_QUANTITIES>\r\n        <item>\r\n          <MANDT/>\r\n          <MATNR>340-00054</MATNR>\r\n          <WERKS>SG01</WERKS>\r\n          <CURRENT_QTY/>\r\n          <CUR_CONSIGN_QTY/>\r\n          <NEW_QTY/>\r\n          <REPAIRED_QTY/>\r\n          <OTHER_QTY/>\r\n          <UOM/>\r\n          <UNRESTRCT_QTY/>\r\n          <QUAL_INSP_QTY/>\r\n          <RESTRCT_QTY/>\r\n          <BLOCKED_QTY/>\r\n          <CON_UNRESTRCT_QTY/>\r\n          <CON_QUAL_INSP_QTY/>\r\n          <CON_RESTRCT_QTY/>\r\n          <CON_BLOCKED_QTY/>\r\n          <CORE_RETURN_QTY/>\r\n        </item>\r\n      </RETURN_QUANTITIES>\r\n    </urn:Z_MM_STOCK_SLOC_STOCK>\r\n  </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "API to check for storage location stock by parts<br/>\r\nObject Name: Z_MM_STOCK_SLOC_STOCK<br/>\r\nInputs: material no and plant (multiple possible)"
+			},
+			"response": []
+		},
+		{
+			"name": "MMS_Used Fr SF01 to MC99 - Z_MM_STOCK_LINE_RETURN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_LINE_RETURN"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <n0:Z_MM_STOCK_LINE_RETURN xmlns:n0=\"urn:sap-com:document:sap:rfc:functions\">\r\n <RETURN>\r\n </RETURN>\r\n <STOCK_RETURN>\r\n  <item>\r\n   <MATNR>340-00054</MATNR>\r\n   <WERKS>SG01</WERKS>\r\n   <CHARG>AUW1903816</CHARG>\r\n   <KOSTL></KOSTL>\r\n   <RETURNQTY>1</RETURNQTY>\r\n   <RETURNTYPE></RETURNTYPE>\r\n  </item>\r\n </STOCK_RETURN>\r\n</n0:Z_MM_STOCK_LINE_RETURN>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "this is for moving stock from storage location sf01 to mc99"
+			},
+			"response": []
+		},
+		{
+			"name": "MMY MMS_Used Fr MC99 to SAP - Z_MM_STOCK_LINE_ISSUE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_LINE_ISSUE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <urn:Z_MM_STOCK_LINE_ISSUE>\r\n            <RETURN>\r\n\t\t\t</RETURN>\r\n            <STOCK_ISSUE>\r\n                <item>\r\n                    <MATERIAL_NO>340-00054</MATERIAL_NO>\r\n                    <PLANT>MY01</PLANT>\r\n                    <BATCH_NO>S1951329</BATCH_NO>\r\n                    <COST_CENTER></COST_CENTER>\r\n                    <ISSUE_QTY>6000</ISSUE_QTY>\r\n                </item>\r\n            </STOCK_ISSUE>\r\n        </urn:Z_MM_STOCK_LINE_ISSUE>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>\r\n\r\n"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "stock will be moving to sap from matreq<br/>\r\nfor that ref we create material document to cross check in the sap"
+			},
+			"response": []
+		},
+		{
+			"name": "STOCKRM STOCK_SLOC_PARTS - Z_MM_STOCK_SLOC_PARTS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_SLOC_PARTS"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <urn:Z_MM_STOCK_SLOC_PARTS>\n      <MATERIAL_GROUP>\n        <SIGN>I</SIGN>\n        <OPTION>EQ</OPTION>\n        <LOW>300</LOW>\n        <HIGH/>\n      </MATERIAL_GROUP>\n      <MATERIAL_TYPE>\n        <SIGN/>\n        <OPTION/>\n        <LOW/>\n        <HIGH/>\n      </MATERIAL_TYPE>\n      <PARTS>\n        <item>\n          <MATERIAL_NO/>\n          <PLANT/>\n          <STORAGE_LOC/>\n        </item>\n        <item>\n          <MATERIAL_NO/>\n          <PLANT/>\n          <STORAGE_LOC/>\n        </item>\n      </PARTS>\n      <PLANT>\n        <SIGN>I</SIGN>\n        <OPTION>EQ</OPTION>\n        <LOW>SG01</LOW>\n        <HIGH/>\n      </PLANT>\n      <SLOC>\n        <SIGN>I</SIGN>\n        <OPTION>EQ</OPTION>\n        <LOW>MC15</LOW>\n        <HIGH/>\n      </SLOC>\n    </urn:Z_MM_STOCK_SLOC_PARTS>\n  </soapenv:Body>\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "API to get list of parts in a storage location<br/>\r\nObject name: Z_MM_STOCK_SLOC_PARTS<br/>\r\nInputs: material type, material group, plant and storage location (All inputs are optional but either plant or storage location must be specified) can you please put a validation here"
+			},
+			"response": []
+		},
+		{
+			"name": "STOCKRM STOCK Goods MVT - Z_MM_STOCK_GOODS_MVT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_GOODS_MVT "
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n<urn:Z_MM_STOCK_GOODS_MVT xmlns:n0=\"urn:sap-com:document:sap:rfc:functions\">\r\n  <EXTENSIONIN>\r\n    <item>\r\n      <STRUCTURE/>\r\n      <VALUEPART1/>\r\n      <VALUEPART2/>\r\n      <VALUEPART3/>\r\n      <VALUEPART4/>\r\n    </item>\r\n  </EXTENSIONIN>\r\n  <GOODSMVT_CODE>\r\n    <GM_CODE>04</GM_CODE>\r\n  </GOODSMVT_CODE>\r\n  <GOODSMVT_HEADER>\r\n    <PSTNG_DATE>2019-05-31</PSTNG_DATE>\r\n    <DOC_DATE>2019-05-31</DOC_DATE>\r\n    <REF_DOC_NO/>\r\n    <BILL_OF_LADING/>\r\n    <GR_GI_SLIP_NO/>\r\n    <PR_UNAME/>\r\n    <HEADER_TXT/>\r\n    <VER_GR_GI_SLIP/>\r\n    <VER_GR_GI_SLIPX/>\r\n    <EXT_WMS/>\r\n    <REF_DOC_NO_LONG/>\r\n    <BILL_OF_LADING_LONG/>\r\n    <BAR_CODE/>\r\n  </GOODSMVT_HEADER>\r\n  <GOODSMVT_ITEM>\r\n    <item>\r\n      <MATERIAL>300-00099</MATERIAL>\r\n      <PLANT>SG01</PLANT>\r\n      <STGE_LOC>MC15</STGE_LOC>\r\n      <BATCH>BY1LVRM.ZZ</BATCH>\r\n      <MOVE_TYPE>311</MOVE_TYPE>\r\n      <STCK_TYPE/>\r\n      <SPEC_STOCK/>\r\n      <VENDOR/>\r\n      <CUSTOMER/>\r\n      <SALES_ORD/>\r\n      <S_ORD_ITEM/>\r\n      <SCHED_LINE/>\r\n      <VAL_TYPE/>\r\n      <ENTRY_QNT>1</ENTRY_QNT>\r\n      <ENTRY_UOM/>\r\n      <ENTRY_UOM_ISO/>\r\n      <PO_PR_QNT/>\r\n      <ORDERPR_UN/>\r\n      <ORDERPR_UN_ISO/>\r\n      <PO_NUMBER/>\r\n      <PO_ITEM/>\r\n      <SHIPPING/>\r\n      <COMP_SHIP/>\r\n      <NO_MORE_GR/>\r\n      <ITEM_TEXT/>\r\n      <GR_RCPT/>\r\n      <UNLOAD_PT/>\r\n      <COSTCENTER/>\r\n      <ORDERID/>\r\n      <ORDER_ITNO/>\r\n      <CALC_MOTIVE/>\r\n      <ASSET_NO/>\r\n      <SUB_NUMBER/>\r\n      <RESERV_NO/>\r\n      <RES_ITEM/>\r\n      <RES_TYPE/>\r\n      <WITHDRAWN/>\r\n      <MOVE_MAT/>\r\n      <MOVE_PLANT>SG01</MOVE_PLANT>\r\n      <MOVE_STLOC>SF01</MOVE_STLOC>\r\n      <MOVE_BATCH>PC002</MOVE_BATCH>\r\n      <MOVE_VAL_TYPE/>\r\n      <MVT_IND/>\r\n      <MOVE_REAS/>\r\n      <RL_EST_KEY/>\r\n      <REF_DATE/>\r\n      <COST_OBJ/>\r\n      <PROFIT_SEGM_NO/>\r\n      <PROFIT_CTR/>\r\n      <WBS_ELEM/>\r\n      <NETWORK/>\r\n      <ACTIVITY/>\r\n      <PART_ACCT/>\r\n      <AMOUNT_LC/>\r\n      <AMOUNT_SV/>\r\n      <REF_DOC_YR/>\r\n      <REF_DOC/>\r\n      <REF_DOC_IT/>\r\n      <EXPIRYDATE/>\r\n      <PROD_DATE/>\r\n      <FUND/>\r\n      <FUNDS_CTR/>\r\n      <CMMT_ITEM/>\r\n      <VAL_SALES_ORD/>\r\n      <VAL_S_ORD_ITEM/>\r\n      <VAL_WBS_ELEM/>\r\n      <GL_ACCOUNT/>\r\n      <IND_PROPOSE_QUANX/>\r\n      <XSTOB/>\r\n      <EAN_UPC/>\r\n      <DELIV_NUMB_TO_SEARCH/>\r\n      <DELIV_ITEM_TO_SEARCH/>\r\n      <SERIALNO_AUTO_NUMBERASSIGNMENT/>\r\n      <VENDRBATCH/>\r\n      <STGE_TYPE/>\r\n      <STGE_BIN/>\r\n      <SU_PL_STCK_1/>\r\n      <ST_UN_QTYY_1/>\r\n      <ST_UN_QTYY_1_ISO/>\r\n      <UNITTYPE_1/>\r\n      <SU_PL_STCK_2/>\r\n      <ST_UN_QTYY_2/>\r\n      <ST_UN_QTYY_2_ISO/>\r\n      <UNITTYPE_2/>\r\n      <STGE_TYPE_PC/>\r\n      <STGE_BIN_PC/>\r\n      <NO_PST_CHGNT/>\r\n      <GR_NUMBER/>\r\n      <STGE_TYPE_ST/>\r\n      <STGE_BIN_ST/>\r\n      <MATDOC_TR_CANCEL/>\r\n      <MATITEM_TR_CANCEL/>\r\n      <MATYEAR_TR_CANCEL/>\r\n      <NO_TRANSFER_REQ/>\r\n      <CO_BUSPROC/>\r\n      <ACTTYPE/>\r\n      <SUPPL_VEND/>\r\n      <MATERIAL_EXTERNAL/>\r\n      <MATERIAL_GUID/>\r\n      <MATERIAL_VERSION/>\r\n      <MOVE_MAT_EXTERNAL/>\r\n      <MOVE_MAT_GUID/>\r\n      <MOVE_MAT_VERSION/>\r\n      <FUNC_AREA/>\r\n      <TR_PART_BA/>\r\n      <PAR_COMPCO/>\r\n      <DELIV_NUMB/>\r\n      <DELIV_ITEM/>\r\n      <NB_SLIPS/>\r\n      <NB_SLIPSX/>\r\n      <GR_RCPTX/>\r\n      <UNLOAD_PTX/>\r\n      <SPEC_MVMT/>\r\n      <GRANT_NBR/>\r\n      <CMMT_ITEM_LONG/>\r\n      <FUNC_AREA_LONG/>\r\n      <LINE_ID/>\r\n      <PARENT_ID/>\r\n      <LINE_DEPTH/>\r\n      <QUANTITY/>\r\n      <BASE_UOM/>\r\n      <LONGNUM/>\r\n      <BUDGET_PERIOD/>\r\n      <EARMARKED_NUMBER/>\r\n      <EARMARKED_ITEM/>\r\n      <STK_SEGMENT/>\r\n      <MOVE_SEGMENT/>\r\n    </item>\r\n  </GOODSMVT_ITEM>\r\n  <GOODSMVT_ITEM_CWM>\r\n    <item>\r\n      <MATDOC_ITM/>\r\n      <QUANTITY_PME/>\r\n      <BASE_UOM_PME/>\r\n      <ENTRY_QNT_PME/>\r\n      <ENTRY_UOM_PME/>\r\n    </item>\r\n  </GOODSMVT_ITEM_CWM>\r\n  <GOODSMVT_REF_EWM>\r\n    <REF_DOC_EWM/>\r\n    <LOGSYS/>\r\n    <GTS_SCRAP_NO/>\r\n  </GOODSMVT_REF_EWM>\r\n  <GOODSMVT_SERIALNUMBER>\r\n    <item>\r\n      <MATDOC_ITM/>\r\n      <SERIALNO/>\r\n      <UII/>\r\n    </item>\r\n  </GOODSMVT_SERIALNUMBER>\r\n  <GOODSMVT_SERV_PART_DATA>\r\n    <item>\r\n      <LINE_ID/>\r\n      <RET_AUTH_NUMBER/>\r\n      <DELIV_NUMBER/>\r\n      <DELIV_ITEM/>\r\n      <HU_NUMBER/>\r\n      <INSPOUT_GUID/>\r\n      <EVENT/>\r\n      <DATE/>\r\n      <TIME/>\r\n      <ZONLO/>\r\n      <TIMESTAMP/>\r\n      <SCRAP_INDICATOR/>\r\n      <KEEP_QUANTITY/>\r\n      <GTS_STOCK_TYPE/>\r\n      <MOVE_GTS_STOCK_TYPE/>\r\n      <KEEP_QUANTITY_CONVERSION/>\r\n      <ZERO_QUANTITY/>\r\n      <NUMERATOR/>\r\n      <DENOMINATR/>\r\n      <INSP_DOC_NUMB/>\r\n      <PCHG_TYPE/>\r\n    </item>\r\n  </GOODSMVT_SERV_PART_DATA>\r\n  <RETURN>\r\n    <item>\r\n      <TYPE/>\r\n      <ID/>\r\n      <NUMBER/>\r\n      <MESSAGE/>\r\n      <LOG_NO/>\r\n      <LOG_MSG_NO/>\r\n      <MESSAGE_V1/>\r\n      <MESSAGE_V2/>\r\n      <MESSAGE_V3/>\r\n      <MESSAGE_V4/>\r\n      <PARAMETER/>\r\n      <ROW/>\r\n      <FIELD/>\r\n      <SYSTEM/>\r\n    </item>\r\n  </RETURN>\r\n  <TESTRUN/>\r\n  <WAIT>\r\n    <BAPIFLAG/>\r\n  </WAIT>\r\n</urn:Z_MM_STOCK_GOODS_MVT>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{StockRoomURL}}",
+					"host": [
+						"{{GatewayURL}}{{StockRoomURL}}"
+					]
+				},
+				"description": "API For goods movement generic function<br/>\r\nObject Name: Z_MM_STOCK_GOODS_MVT <br/>\r\nInputs: Movement code, posting date, document date, Items:material no, storage loc, movement type, batch,move_stloc,move_batch ( based on goods movement code, inputs will be vary)"
+			},
+			"response": []
+		},
+		{
+			"name": "MatReq Cost Center - Z_MM_STOCK_COST_CENTER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/xml"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{SAPToken}}"
+					},
+					{
+						"key": "x-mt-sap-access-token",
+						"type": "text",
+						"value": "Basic TU1TLVJGQzo3Z1BNeEZFVQ=="
+					},
+					{
+						"key": "SOAPAction",
+						"type": "text",
+						"value": "urn:sap-com:document:sap:rfc:functions:ZM_STOCKRM_API:Z_MM_STOCK_COST_CENTER"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:sap-com:document:sap:rfc:functions\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n<urn:Z_MM_STOCK_COST_CENTER>\r\n  <P_CONTROLLING_AREA>1000</P_CONTROLLING_AREA>\r\n  <P_COSTCENTER>0000102014</P_COSTCENTER>\r\n  <P_DIST_CHANNEL>99</P_DIST_CHANNEL>\r\n  <P_DIVISION>01</P_DIVISION>\r\n  <P_LANGUAGE>E</P_LANGUAGE>\r\n  <P_SALESORG>SG01</P_SALESORG>\r\n  <T_COST_CENTER>\r\n    <item>\r\n      <MANDT/>\r\n      <AUGRU/>\r\n      <KOSTL/>\r\n      <LTEXT/>\r\n    </item>\r\n    <item>\r\n      <MANDT/>\r\n      <AUGRU/>\r\n      <KOSTL/>\r\n      <LTEXT/>\r\n    </item>\r\n  </T_COST_CENTER>\r\n</urn:Z_MM_STOCK_COST_CENTER>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>"
+				},
+				"url": {
+					"raw": "{{GatewayURL}}{{MatReqURL}}",
+					"host": [
+						"{{GatewayURL}}{{MatReqURL}}"
+					]
+				},
+				"description": "API for order reason by cost center or list of order reasons<br/>\r\nObject Name: Z_MM_STOCK_COST_CENTER<br/>\r\nInputs: Cost center,dist channel,division,language,controlling area,sales org.<br/>"
+			},
+			"response": []
+		},
+		{
+			"name": "https://webapigateway.micron.com/t/app.infra/mipc/1.0.1/SendReceive?timeout=120&siteName=SINGAPORE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer d71ca256-e78d-3848-ac36-bd54a0b0ddae",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"SourceAddress\": \"\",\r\n\t\"ReplyAddress\": \"\",\r\n\t\"StringContents\": \"<SOAP-ENV:Envelope xmlns:SOAP-ENV=\\\"http://schemas.xmlsoap.org/soap/envelope/\\\"><SOAP-ENV:Header><MTXMLMsg MsgType=\\\"CMD\\\" /></SOAP-ENV:Header><SOAP-ENV:Body><GetMAInfo><Facility>ASSEMBLY</Facility><Authorization><ClientId>MSA SMARTLOCATE</ClientId></Authorization><MAId>BFKWGKP.5X</MAId><MAType>LOT</MAType><MAAttrList><Attr><Id>ASM LOT LOCATION</Id></Attr></MAAttrList><InTransitFromFacility /><InTransitToFacility /><CurStepOrLoc /><CurFacility /><MAState /></GetMAInfo></SOAP-ENV:Body></SOAP-ENV:Envelope>\",\r\n\t\"DestinationAddress\": \"MTI/MFG/MESSRV/PROD/SERVER/MESSRV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://webapigateway.micron.com/t/app.infra/mipc/1.0.1/SendReceive?timeout=120&siteName=SINGAPORE",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mipc",
+						"1.0.1",
+						"SendReceive"
+					],
+					"query": [
+						{
+							"key": "timeout",
+							"value": "120"
+						},
+						{
+							"key": "siteName",
+							"value": "SINGAPORE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

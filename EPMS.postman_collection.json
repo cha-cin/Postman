@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "69d85a6a-4b18-46b3-a984-9850c484b0b3",
+		"name": "EPMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16386044"
+	},
+	"item": [
+		{
+			"name": "apim-opc-prod.micron.com/token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let count = pm.environment.get(\"count\")\r",
+							"let sleeptime =pm.environment.get(\"retrySleepTime\")\r",
+							"var moment = require(\"moment\")\r",
+							"if(!count){\r",
+							"    count=1;\r",
+							"}\r",
+							"let retry = pm.environment.get(\"retrytimes\")\r",
+							"pm.environment.set(\"Access_Token\", \"\");\r",
+							"if ((count < retry) && (pm.response.code != 200) ){\r",
+							"    count+=1;\r",
+							"    pm.environment.set(\"count\",count)\r",
+							"    setTimeout(function(){}, sleeptime);\r",
+							"    postman.setNextRequest(request.name);\r",
+							"}\r",
+							"else{\r",
+							"    pm.environment.unset(\"count\");\r",
+							"    pm.test(\"Status code is 200, Request time: \"+moment().format((\"YYYY-MM-DDTHH:mm:ss:SSS\")), function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    var jsonData = JSON.parse(responseBody);\r",
+							"    pm.environment.set(\"Access_Token\", jsonData.access_token);\r",
+							"});\r",
+							"\r",
+							"}\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{AppSecret_OPC}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{AppKey_OPC}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-opc-prod.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-opc-prod",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": "767a2e9e-a186-413e-9c94-43a37d0fa128"
+			},
+			"response": []
+		},
+		{
+			"name": "ta-apim-opc-prod.tatw.micron.com/EPMSWebApi",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let count = pm.environment.get(\"count\")\r",
+							"let sleeptime =pm.environment.get(\"retrySleepTime\")\r",
+							"var moment = require(\"moment\")\r",
+							"if(!count){\r",
+							"    count=1;\r",
+							"}\r",
+							"let retry = pm.environment.get(\"retrytimes\")\r",
+							"\r",
+							"if ((count < retry) && (pm.response.code != 200) && pm.environment.get(\"Access_Token\").length>0 ){\r",
+							"    count+=1;\r",
+							"    pm.environment.set(\"count\",count)\r",
+							"    setTimeout(function(){}, sleeptime);\r",
+							"    postman.setNextRequest(request.name);\r",
+							"}\r",
+							"else{\r",
+							"    pm.environment.unset(\"count\");\r",
+							"    pm.test(\"Status code is 200, Request time: \"+moment().format((\"YYYY-MM-DDTHH:mm:ss:SSS\"))+\", Response time: \"+pm.response.responseTime+\"ms\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.text()).to.eql(\"true\");\r",
+							"\r",
+							"});\r",
+							"\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Access_Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "{{x-mt-adfs-openid}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Manufacturing:FAB Z TESTING:Material Tracking:Batch Disposition\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-apim-opc-prod.tatw.micron.com/corp/epms/Security/Authorize/Feature",
+					"protocol": "https",
+					"host": [
+						"ta-apim-opc-prod",
+						"tatw",
+						"micron",
+						"com"
+					],
+					"path": [
+						"corp",
+						"epms",
+						"Security",
+						"Authorize",
+						"Feature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ta-apim-opc-prod.tatw.micron.com/EPMSWebApi Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let count = pm.environment.get(\"count\")\r",
+							"let sleeptime =pm.environment.get(\"retrySleepTime\")\r",
+							"var moment = require(\"moment\")\r",
+							"if(!count){\r",
+							"    count=1;\r",
+							"}\r",
+							"let retry = pm.environment.get(\"retrytimes\")\r",
+							"\r",
+							"if ((count < retry) && (pm.response.code != 200) && pm.environment.get(\"Access_Token\").length>0 ){\r",
+							"    count+=1;\r",
+							"    pm.environment.set(\"count\",count)\r",
+							"    setTimeout(function(){}, sleeptime);\r",
+							"    postman.setNextRequest(request.name);\r",
+							"}\r",
+							"else{\r",
+							"    pm.environment.unset(\"count\");\r",
+							"    pm.test(\"Status code is 200, Request time: \"+moment().format((\"YYYY-MM-DDTHH:mm:ss:SSS\"))+\", Response time: \"+pm.response.responseTime+\"ms\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.text()).to.eql(\"true\");\r",
+							"\r",
+							"});\r",
+							"\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Access_Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "{{x-mt-adfs-openid}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Manufacturing:FAB Z TESTING:Material Tracking:Batch Disposition\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-apim-opc-prod.tatw.micron.com/corp/epms/Security/Authorize/Feature",
+					"protocol": "https",
+					"host": [
+						"ta-apim-opc-prod",
+						"tatw",
+						"micron",
+						"com"
+					],
+					"path": [
+						"corp",
+						"epms",
+						"Security",
+						"Authorize",
+						"Feature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ta-apim-opc-prod.tatw.micron.com/EPMSWebApiV2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let count = pm.environment.get(\"count\")\r",
+							"let sleeptime =pm.environment.get(\"retrySleepTime\")\r",
+							"var moment = require(\"moment\")\r",
+							"if(!count){\r",
+							"    count=1;\r",
+							"}\r",
+							"let retry = pm.environment.get(\"retrytimes\")\r",
+							"\r",
+							"if ((count < retry) && (pm.response.code != 200) && pm.environment.get(\"Access_Token\").length>0 ){\r",
+							"    count+=1;\r",
+							"    pm.environment.set(\"count\",count)\r",
+							"    setTimeout(function(){}, sleeptime);\r",
+							"    postman.setNextRequest(request.name);\r",
+							"}\r",
+							"else{\r",
+							"    pm.environment.unset(\"count\");\r",
+							"    pm.test(\"Status code is 200, Request time: \"+moment().format((\"YYYY-MM-DDTHH:mm:ss:SSS\"))+\", Response time: \"+pm.response.responseTime+\"ms\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.text()).to.eql(\"true\");\r",
+							" \r",
+							" \r",
+							"});\r",
+							"\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Access_Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "{{x-mt-adfs-openid}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Manufacturing:FAB Z TESTING:Material Tracking:Batch Disposition\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-apim-opc-prod.tatw.micron.com/corp/epmsv2/Security/Authorize/Feature",
+					"protocol": "https",
+					"host": [
+						"ta-apim-opc-prod",
+						"tatw",
+						"micron",
+						"com"
+					],
+					"path": [
+						"corp",
+						"epmsv2",
+						"Security",
+						"Authorize",
+						"Feature"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

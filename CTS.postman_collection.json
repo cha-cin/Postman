@@ -1,0 +1,1026 @@
+{
+	"info": {
+		"_postman_id": "2bf58263-3d19-4098-98a1-505070eb1725",
+		"name": "CTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WEBAPIGATEWAY GetCredential",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/t/app.infra/mtsecurity/Credential?systemName=ContainerTrackingSystem&versionName=1.0&credentialName=ContainerTracking&environment={{urlEnvr}}&encryptKey=CTS1234567",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ContainerTrackingSystem"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "ContainerTracking"
+						},
+						{
+							"key": "environment",
+							"value": "{{urlEnvr}}"
+						},
+						{
+							"key": "encryptKey",
+							"value": "CTS1234567"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "EET",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webapigateway.micron.com:443/t/app.infra/mtsecurity/Credential?systemName=EET&versionName=1.0&credentialName=eet_db_info&environment=Production&encryptKey=null",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "EET"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "eet_db_info"
+						},
+						{
+							"key": "environment",
+							"value": "Production"
+						},
+						{
+							"key": "encryptKey",
+							"value": "null"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "EET Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webapigateway.micron.com:443/t/app.infra/mtsecurity/Credential?systemName=EET&versionName=1.0&credentialName=eet_db_info&environment=Production&encryptKey=null",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "EET"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "eet_db_info"
+						},
+						{
+							"key": "environment",
+							"value": "Production"
+						},
+						{
+							"key": "encryptKey",
+							"value": "null"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "CTSOS_COMMAND",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webapigateway.micron.com:443/t/app.infra/mtsecurity/Credential?systemName=EET&versionName=1.0&credentialName=eet_db_info&environment=Production&encryptKey=null",
+					"protocol": "https",
+					"host": [
+						"webapigateway",
+						"micron",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "EET"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "eet_db_info"
+						},
+						{
+							"key": "environment",
+							"value": "Production"
+						},
+						{
+							"key": "encryptKey",
+							"value": "null"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "TAAPI2 GetCredential",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"TAapi2tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{TAapi2Url}}/t/app.infra/mtsecurity/Credential?systemName=ContainerTrackingSystem&versionName=1.0&credentialName=ContainerTracking&environment={{urlEnvr}}&encryptKey=CTS1234567",
+					"host": [
+						"{{TAapi2Url}}"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ContainerTrackingSystem"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "ContainerTracking"
+						},
+						{
+							"key": "environment",
+							"value": "{{urlEnvr}}"
+						},
+						{
+							"key": "encryptKey",
+							"value": "CTS1234567"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "TAAPI3 GetCredential",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"TAapi3tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"type": "text",
+						"value": "{{Site}}"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "{{TAapi3Url}}/t/app.infra/mtsecurity/Credential?systemName=ContainerTrackingSystem&versionName=1.0&credentialName=ContainerTracking&environment={{urlEnvr}}&encryptKey=CTS1234567",
+					"host": [
+						"{{TAapi3Url}}"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ContainerTrackingSystem"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "ContainerTracking"
+						},
+						{
+							"key": "environment",
+							"value": "{{urlEnvr}}"
+						},
+						{
+							"key": "encryptKey",
+							"value": "CTS1234567"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "BOAPI2 GetCredential",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"BOapi2tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"value": "{{Site}}",
+						"type": "text"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BOapi2Url}}/t/app.infra/mtsecurity/Credential?systemName=ContainerTrackingSystem&versionName=1.0&credentialName=ContainerTracking&environment={{urlEnvr}}&encryptKey=CTS1234567",
+					"host": [
+						"{{BOapi2Url}}"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ContainerTrackingSystem"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "ContainerTracking"
+						},
+						{
+							"key": "environment",
+							"value": "{{urlEnvr}}"
+						},
+						{
+							"key": "encryptKey",
+							"value": "CTS1234567"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "BOAPI3 GetCredential",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Authorization header\r",
+							"let tokenUrl = pm.environment.get(\"BOapi3tokenUrl\");\r",
+							"let clientId = pm.environment.get(\"clientId\");\r",
+							"let clientSecret = pm.environment.get(\"clientSecret\");\r",
+							"\r",
+							"if(tokenUrl)\r",
+							"{\r",
+							"    let getTokenRequest = {\r",
+							"        method: 'POST',\r",
+							"        url: tokenUrl,\r",
+							"        header: {\r",
+							"            'Accept': 'application/json',\r",
+							"            'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'urlencoded',\r",
+							"            urlencoded: [\r",
+							"                { key: 'grant_type', value: 'client_credentials', disabled: false },\r",
+							"                { key: 'client_id', value: clientId, disabled: false },\r",
+							"                { key: 'client_secret', value: clientSecret, disabled: false }\r",
+							"            ]\r",
+							"        }\r",
+							"    };\r",
+							"    \r",
+							"    pm.sendRequest(getTokenRequest, (err, response) => {\r",
+							"        let jsonResponse = response.json(),\r",
+							"            newAccessToken = jsonResponse.access_token;\r",
+							"    \r",
+							"        console.log({ err, jsonResponse, newAccessToken });\r",
+							"    \r",
+							"        pm.request.headers.upsert(\r",
+							"        { \r",
+							"            key: \"Authorization\", \r",
+							"            value: \"Bearer \" + newAccessToken\r",
+							"        });\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// adfs token\r",
+							"pm.request.headers.upsert(\r",
+							"{ \r",
+							"    key: pm.globals.get(\"adfsHeader\"), \r",
+							"    value: pm.globals.get(\"adfsToken\")\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mt-site-name",
+						"type": "text",
+						"value": "{{Site}}"
+					},
+					{
+						"key": "x-mt-adfs-openid",
+						"type": "text",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "{{BOapi3Url}}/t/app.infra/mtsecurity/Credential?systemName=ContainerTrackingSystem&versionName=1.0&credentialName=ContainerTracking&environment={{urlEnvr}}&encryptKey=CTS1234567",
+					"host": [
+						"{{BOapi3Url}}"
+					],
+					"path": [
+						"t",
+						"app.infra",
+						"mtsecurity",
+						"Credential"
+					],
+					"query": [
+						{
+							"key": "systemName",
+							"value": "ContainerTrackingSystem"
+						},
+						{
+							"key": "versionName",
+							"value": "1.0"
+						},
+						{
+							"key": "credentialName",
+							"value": "ContainerTracking"
+						},
+						{
+							"key": "environment",
+							"value": "{{urlEnvr}}"
+						},
+						{
+							"key": "encryptKey",
+							"value": "CTS1234567"
+						}
+					]
+				},
+				"description": "GetCredential from MTSecuriy"
+			},
+			"response": []
+		},
+		{
+			"name": "tbwbemfgapp06 WS CTSContainerInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Body><CTSContainerInfo><Containers><Container><Id>WE25A129ESB3</Id><Type>WAFER</Type></Container></Containers></CTSContainerInfo></SOAP-ENV:Body></SOAP-ENV:Envelope>"
+				},
+				"url": {
+					"raw": "http://tbwbemfgapp06/CTSWebservice/prod/taichung_be/CTSContainerInfo",
+					"protocol": "http",
+					"host": [
+						"tbwbemfgapp06"
+					],
+					"path": [
+						"CTSWebservice",
+						"prod",
+						"taichung_be",
+						"CTSContainerInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tbwbemfgapp05 WS CTSContainerInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Body><CTSContainerInfo><Containers><Container><Id>WE25A129ESB3</Id><Type>WAFER</Type></Container></Containers></CTSContainerInfo></SOAP-ENV:Body></SOAP-ENV:Envelope>"
+				},
+				"url": {
+					"raw": "http://tbwbemfgapp06/CTSWebservice/prod/taichung_be/CTSContainerInfo",
+					"protocol": "http",
+					"host": [
+						"tbwbemfgapp06"
+					],
+					"path": [
+						"CTSWebservice",
+						"prod",
+						"taichung_be",
+						"CTSContainerInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CTS Apigee opc",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Cni5EchHOm2f3ZH7YV986Pok8tc1cA8kK0tHEvQUrxAzAnDIGEHcF5Sx877V9qpO",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "luYhkAL1jGqwO1fGdHqAEdgvpEGwumrVxP4Pb2J7hNBgxE4P",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-opc-rc.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-opc-rc",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CTS Apigee gcp",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PeEp55YOxq3oDxNgWN1xEGXf632nuKFIPgNNVenuGR2gAzau7tFlme0IHitBDvdm",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "QakfLfQ66gwiSkxkaaYayBm4mhbcsZJjqfgqM4eeiLQbzdR5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-gcp-dev.gc.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-gcp-dev",
+						"gc",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

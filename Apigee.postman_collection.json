@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "6f0862bd-2c3e-45c3-8b7f-9a07a326369d",
+		"name": "Apigee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://apim-opc-prod.micron.com/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Cni5EchHOm2f3ZH7YV986Pok8tc1cA8kK0tHEvQUrxAzAnDIGEHcF5Sx877V9qpO",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "luYhkAL1jGqwO1fGdHqAEdgvpEGwumrVxP4Pb2J7hNBgxE4P",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-opc-prod.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-opc-prod",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apim-opc-rc.micron.com/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Cni5EchHOm2f3ZH7YV986Pok8tc1cA8kK0tHEvQUrxAzAnDIGEHcF5Sx877V9qpO",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "luYhkAL1jGqwO1fGdHqAEdgvpEGwumrVxP4Pb2J7hNBgxE4P",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-opc-rc.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-opc-rc",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://apim-gcp-dev.gc.micron.com/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PeEp55YOxq3oDxNgWN1xEGXf632nuKFIPgNNVenuGR2gAzau7tFlme0IHitBDvdm",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "QakfLfQ66gwiSkxkaaYayBm4mhbcsZJjqfgqM4eeiLQbzdR5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apim-gcp-dev.gc.micron.com/token",
+					"protocol": "https",
+					"host": [
+						"apim-gcp-dev",
+						"gc",
+						"micron",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
